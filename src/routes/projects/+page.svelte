@@ -23,6 +23,7 @@
 					description: 'A SaaS platform for company financials and stock market analytics integrated with advanced agentic AI capabilities.',
 					tech: ["Next.js", "Python", "Tailwind", "Google Cloud", "LangChain DeepAgents", "LangFuse"],
 					link: 'https://quantvision.ai',
+					tags: ['Startup'],
 					status: 'To Be Released'
 				},
 			] as project, i}
@@ -46,6 +47,18 @@
 					<p class="leading-relaxed mb-4" style="color: var(--color-text-on-box); opacity: 0.85">
 						{project.description}
 					</p>
+					{#if project.tags && project.tags.length > 0}
+						<div class="flex flex-wrap gap-2 mb-3">
+							{#each project.tags as tag}
+								<span
+									class="px-3 py-1 rounded-full text-xs font-semibold"
+									style="background: var(--color-text-on-box); color: var(--color-box); opacity: 0.9"
+								>
+									{tag}
+								</span>
+							{/each}
+						</div>
+					{/if}
 					<div class="flex flex-wrap gap-2 mb-4">
 						{#each project.tech as tech}
 							<span
