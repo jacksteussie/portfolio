@@ -83,6 +83,7 @@ declare module '$env/static/private' {
 	export const OSLogRateLimit: string;
 	export const FIG_TERM: string;
 	export const npm_node_execpath: string;
+	export const NODE_ENV: string;
 }
 
 /**
@@ -169,6 +170,7 @@ declare module '$env/dynamic/private' {
 		OSLogRateLimit: string;
 		FIG_TERM: string;
 		npm_node_execpath: string;
+		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}
