@@ -8,5 +8,8 @@
 	],
 	"/resume": [
 		"src/routes/+layout.ts"
+	],
+	"/skills": [
+		"src/routes/+layout.ts"
 	]
 }
