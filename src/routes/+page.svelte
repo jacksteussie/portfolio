@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 </script>
 
 {#key $page.url.pathname}
@@ -24,14 +25,14 @@
 		<!-- Quick Links -->
 		<div class="flex flex-wrap justify-center gap-6 mb-12 mt-8">
 				<a
-					href="/projects"
+					href="{base}/projects"
 					class="nav-btn px-8 py-4 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl font-medium"
 					style="background: var(--color-box); color: var(--color-text-on-box)"
 				>
 					View Projects
 				</a>
 				<a
-					href="/resume"
+					href="{base}/resume"
 					class="nav-btn px-8 py-4 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl font-medium"
 					style="background: var(--color-box); color: var(--color-text-on-box)"
 				>

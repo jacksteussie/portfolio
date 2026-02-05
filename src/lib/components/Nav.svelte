@@ -1,16 +1,17 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 
 	const links = [
-		{ name: 'Home', path: '/' },
-		{ name: 'Projects', path: '/projects' },
-		{ name: 'Resume', path: '/resume' }
+		{ name: 'Home', path: `${base}/` },
+		{ name: 'Projects', path: `${base}/projects` },
+		{ name: 'Resume', path: `${base}/resume` }
 	];
 </script>
 
 <nav class="fixed top-0 left-0 right-0 z-50 py-6 px-6" style="background: var(--color-background)">
 	<div class="max-w-6xl mx-auto flex justify-between items-center">
-		<a href="/" class="text-2xl font-bold" style="color: var(--color-primary)">
+		<a href="{base}/" class="text-2xl font-bold" style="color: var(--color-primary)">
 			JS
 		</a>
 		<ul class="flex gap-8">
