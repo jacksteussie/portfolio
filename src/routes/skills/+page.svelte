@@ -9,7 +9,7 @@
 			<a href="{base}/" class="inline-block mb-8 text-lg hover:underline" style="color: var(--color-primary); opacity: 0.8">
 				← Back to Home
 			</a>
-			<h1 class="text-6xl font-bold mb-4" style="color: var(--color-primary)">Resume</h1>
+			<h1 class="text-6xl font-bold mb-4" style="color: var(--color-primary)">Skills</h1>
 			<p class="text-xl" style="color: var(--color-primary); opacity: 0.7">
 				Coming soon...
 			</p>
