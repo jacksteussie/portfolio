@@ -38,6 +38,13 @@ body {
     overflow-x: hidden;
 }
 
+.page-header-box {
+    background: var(--color-background);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
 /* Custom utility classes */
 .image-hover-effect {
     filter: grayscale(100%);

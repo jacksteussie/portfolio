@@ -5,7 +5,6 @@
 	const links = [
 		{ name: 'Home', path: `${base}/` },
 		{ name: 'Projects', path: `${base}/projects` },
-		{ name: 'Skills', path: `${base}/skills` },
 		{ name: 'Resume', path: `${base}/resume` }
 	];
 </script>

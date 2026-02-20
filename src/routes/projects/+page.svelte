@@ -5,7 +5,7 @@
 <div class="min-h-screen px-6 py-12">
 	<div class="max-w-6xl mx-auto">
 		<!-- Header -->
-		<header class="mb-16 text-center">
+		<header class="mb-16 text-center page-header-box">
 			<a href="{base}/" class="inline-block mb-8 text-lg hover:underline" style="color: var(--color-primary); opacity: 0.8">
 				← Back to Home
 			</a>
