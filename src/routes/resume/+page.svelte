@@ -45,7 +45,7 @@
 		{
 			name: 'QuantVision.ai',
 			description:
-				'Founded and architected QuantVision.ai, a financial data platform centralizing company filings and financials, designed to scale into a comprehensive analysis solution for emerging and seasoned analysts. Serves terabytes of company filings via AWS S3 and structured financial data via a managed PostgreSQL instance, with infrastructure designed to scale into a production-ready platform. Technology stack included a full Typescript/Next.js frontend and backend with several backend microservices written with Python\'s FastAPI and Golang, with the main webapp hosted on Vercel and microservices on Google Cloud.'
+				'Founded and architected QuantVision.ai, a financial data platform centralizing company filings and financials, designed to scale into a comprehensive analysis solution for emerging and seasoned analysts. Serves terabytes of company filings via AWS S3 and structured financial data via a managed PostgreSQL instance, with infrastructure designed to scale into a production-ready platform. Technology stack included a full Typescript/Next.js frontend and backend with several backend microservices written with Python\'s FastAPI and Golang, with the main webapp hosted on Vercel and microservices on Google Cloud. Currently developing an agentic AI with LangChain\'s DeepAgents package that interfaces with a Neo4j knowledge graph containing industry and company relationships and Elasticsearch for full text and vector search to aid in proposal creation and investment theses.'
 		},
 		{
 			name: 'Brain MRI Computer Vision Classifier',
@@ -97,7 +97,7 @@
 		'Pandas',
 		'PyTorch',
 		'XGBoost',
-		'LangChain & DeepAgents',
+		'LangChain/DeepAgents',
 		'Scikit-Learn',
 		'CI/CD',
 		'Terraform',
