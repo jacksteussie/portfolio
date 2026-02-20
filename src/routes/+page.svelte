@@ -29,7 +29,7 @@
 					class="nav-btn px-8 py-4 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl font-medium"
 					style="background: var(--color-box); color: var(--color-text-on-box)"
 				>
-					View Projects
+					Projects
 				</a>
 				<a
 					href="{base}/resume"
