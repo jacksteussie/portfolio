@@ -78,7 +78,7 @@
 		'Software Development',
 		'Amazon Web Services',
 		'Microsoft Azure',
-		'Machine Learning Algorithms',
+		'Machine Learning',
 		'Large Language Models',
 		'Agentic AI',
 		'Linux',
