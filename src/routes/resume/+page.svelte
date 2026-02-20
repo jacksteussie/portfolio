@@ -11,7 +11,7 @@
 			location: 'San Diego, California',
 			dates: 'February 2024 - Present',
 			description:
-				'I work with DoD clients in an R&D lab with a primary focus on developing proprietary software to analyze warfighter cyber readiness and asset posture. I currently hold a Secret clearance and am in the process of obtaining Top Secret clearance.',
+				'Developed proprietary software for DoD clients within an R&D lab environment focused on analyzing cyber readiness of the warfighter and its associated assets. Maintained an active Secret clearance while pursuing Top-Secret clearance. Leveraged a modern technology stack including React, Golang, Docker, Python, various Microsoft Azure Government services, Terraform, and GitLab/GitHub CI/CD pipelines, alongside Palantir\'s Maven Smart Systems development platform.',
 			tech: ['React', 'Go', 'Docker', 'Python', 'Azure Government', 'Terraform', 'GitLab', 'GitHub', 'CI/CD', "Palantir Maven"]
 		},
 		{
@@ -20,7 +20,7 @@
 			location: 'San Diego, California',
 			dates: 'June 2023 - January 2024',
 			description:
-				'Worked with company leadership and team members to build proprietary software solutions and data pipelines. Responsibilities included task distribution, code review, version control, and architecture design/implementation. Built a financial-data pipeline for investment opportunity discovery and company valuation using NLP, AI models, data APIs, DynamoDB, AWS Lambda, and Python web sockets.',
+				'Spearheaded the end-to-end design and development of a proprietary financial data pipeline, independently architecting a solution that automated the identification of investment opportunities and company valuations using LLMs. Collaborated with company leaders and team members throughout the process, leading task distribution, code review, version control, and system architecture decisions. Integrated NLP and AI models, multi-source data APIs, AWS DynamoDB for storage, and LLMs to extract insights from SEC filings at scale. Engineered Python-based web sockets to consume high-volume daily filing streams and automated fund notifications via AWS Lambda.',
 			tech: ['Python', 'NLP', 'LLMs', 'AWS DynamoDB', 'AWS Lambda', 'WebSockets', 'Data APIs']
 		},
 		{
@@ -29,7 +29,7 @@
 			location: 'Remote',
 			dates: 'January 2023 - June 2023',
 			description:
-				'Worked with company leaders to build data pipelines and automated reporting systems. Created daily activity reports, optimized user-group assignments, and built an activity-based segmentation model to identify high-risk users.'
+				'Worked with company leaders to develop data pipelines and automated data reporting systems. Responsibilities included data analysis and system architecture design and implementation. I created an automated reporting pipeline that included daily activity reports, optimized user group assignments, and an activity-based segmentation model to identify high-risk users.'
 		},
 		{
 			role: 'Data Science Intern',
@@ -37,7 +37,7 @@
 			location: 'Remote',
 			dates: 'June 2021 - August 2021',
 			description:
-				'Completed a data science career acceleration program covering calculus, linear algebra, and statistics. Machine learning modules included linear regression, classification, decision trees, and neural networks with PyTorch.'
+				'Participated in the data science career acceleration program. Foundational components included differential calculus, integral calculus, linear algebra, and statistics. Machine learning modules included linear regression, classification, decision trees, and neural networks using PyTorch.'
 		}
 	];
 
@@ -45,17 +45,17 @@
 		{
 			name: 'QuantVision.ai',
 			description:
-				'Founded and built QuantVision.ai, a financial data platform centralizing company filings and financials, designed to scale into a comprehensive analysis solution for both emerging and seasoned analysts.'
+				'Founded and built QuantVision.ai, a financial data platform centralizing company filings and financials, designed to scale into a comprehensive analysis solution for emerging and seasoned analysts.'
 		},
 		{
 			name: 'Brain MRI Computer Vision Classifier',
 			description:
-				'Built a binary classifier for brain tumor MRIs in PyTorch using a pretrained ResNet-152 model.'
+				'Built binary classifier for brain tumor MRIs in PyTorch using a pretrained ResNet-152 model.'
 		},
 		{
 			name: 'Machine Learning Models and Feature Selection Comparison',
 			description:
-				'Implemented an empirical comparison of supervised learning algorithms using a machine learning pipeline for feature selection, hyperparameter tuning, and model comparison.'
+				'Implemented an empirical comparison of supervised learning algorithms using a machine learning pipeline that automated feature selection, hyperparameter tuning, and model comparison.'
 		}
 	];
 
