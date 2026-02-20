@@ -2,7 +2,7 @@
 	import { base } from '$app/paths';
 
 	const profile =
-		'Detail-oriented, hardworking, and conscientious software engineer with academic and professional experience applying machine learning, artificial intelligence, and software to solve real-world business problems.';
+		'Full-stack software engineer with experience architecting and deploying AI/ML-powered data systems in mission-critical R&D environments, specializing in translating complex analytical workflows into scalable production applications.';
 
 	const experience = [
 		{
