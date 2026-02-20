@@ -11,7 +11,7 @@
 			location: 'San Diego, California',
 			dates: 'February 2024 - Present',
 			description:
-				'Developed proprietary software for DoD clients within a mission-critical R&D lab environment, serving as the technical translator between domain experts and engineering teams to convert complex data pipelines and analysis workflows into scalable production systems. Designed and deployed full-stack applications and data pipelines that abstracted sophisticated cyber readiness analysis into intuitive interfaces, accelerating the research and analysis cycle for non-engineering stakeholders. Leveraged a modern technology stack including React, Golang, Docker, Python, various Microsoft Azure Government services, Terraform, and GitLab/GitHub CI/CD pipelines, alongside Palantir\'s Maven Smart Systems development platform. Maintained an active Secret clearance while pursuing Top-Secret clearance.',
+				'Developed proprietary software for DoD clients within a mission-critical R&D lab environment, serving as the technical translator between domain experts and engineering teams to convert complex data pipelines and analysis workflows into scalable production systems. Owned the design and implementation of the platform ontology within Palantir\'s Maven Smart Systems, leading and mentoring the team on ontological data modeling and the downstream AI integration opportunities it unlocks. Designed and deployed full-stack applications and data pipelines that abstracted sophisticated cyber readiness analysis into intuitive interfaces, accelerating the research and analysis cycle for non-engineering stakeholders. Leveraged a modern technology stack including React, Golang, Docker, Python, various Microsoft Azure Government services, Terraform, and GitLab/GitHub CI/CD pipelines. Maintained an active Secret clearance while pursuing Top-Secret clearance.',
 			tech: ['React', 'Go', 'Docker', 'Python', 'Azure Government', 'Terraform', 'GitLab', 'GitHub', 'CI/CD', 'Palantir Maven Smart Systems']
 		},
 		{
@@ -20,7 +20,7 @@
 			location: 'San Diego, California',
 			dates: 'June 2023 - January 2024',
 			description:
-				'Spearheaded the end-to-end design and development of a proprietary financial data pipeline, architecting a solution that automated the identification of investment opportunities and company valuations using LLMs. Collaborated with company leaders and team members throughout the process, leading task distribution, code review, version control, and system architecture decisions. Integrated NLP and AI models, multi-source data APIs, AWS DynamoDB for storage, and LLMs to extract insights from SEC filings at scale. Engineered Python-based web sockets to consume high-volume daily filing streams and automated fund notifications via AWS Lambda.',
+				'Owned all architecture and implementation decisions end to end for a proprietary financial data pipeline, engineering a solution that automated the identification of investment opportunities and company valuations using LLMs. Collaborated with company leaders and team members throughout the process, leading task distribution, code review, version control, and system architecture decisions. Integrated NLP and AI models, multi-source data APIs, AWS DynamoDB for storage, and LLMs to extract insights from SEC filings at scale. Engineered Python-based web sockets to consume high-volume daily filing streams and automated fund notifications via AWS Lambda.',
 			tech: ['Python', 'NLP', 'LLMs', 'AWS DynamoDB', 'AWS Lambda', 'WebSockets', 'Data APIs']
 		},
 		{
@@ -29,7 +29,7 @@
 			location: 'Remote',
 			dates: 'January 2023 - June 2023',
 			description:
-				'Worked with company leaders to develop data pipelines and automated data reporting systems. Responsibilities included data analysis and system architecture design and implementation. I created an automated reporting pipeline that included daily activity reports, optimized user group assignments, and an activity-based segmentation model to identify high-risk users.'
+				'Partnered with company leaders to develop data pipelines and automated data reporting systems, contributing to data analysis and system architecture design and implementation. Delivered an automated reporting pipeline encompassing daily activity reports, optimized user group assignments, and an activity-based segmentation model to identify high-risk users.'
 		},
 		{
 			role: 'Data Science Intern',
@@ -37,7 +37,7 @@
 			location: 'Remote',
 			dates: 'June 2021 - August 2021',
 			description:
-				'Participated in the data science career acceleration program. Foundational components included differential calculus, integral calculus, linear algebra, and statistics. Machine learning modules included linear regression, classification, decision trees, and neural networks using PyTorch.'
+				'Completed an intensive data science training program working alongside professional data scientists, gaining hands-on experience applying machine learning concepts including linear regression, classification, decision trees, and neural networks using PyTorch to real-world datasets.'
 		}
 	];
 
@@ -45,7 +45,7 @@
 		{
 			name: 'QuantVision.ai',
 			description:
-				'Founded and built QuantVision.ai, a financial data platform centralizing company filings and financials, designed to scale into a comprehensive analysis solution for emerging and seasoned analysts. Technology stack included a full Typescript/Next.js frontend and backend with several backend microservices written with Python\'s FastAPI and Golang. Database is hosted on a managed SaaS platform called Supabase while the main webapp is hosted on Vercel, and various microservices are hosted on Google Cloud.'
+				'Founded and architected QuantVision.ai, a financial data platform centralizing company filings and financials, designed to scale into a comprehensive analysis solution for emerging and seasoned analysts. Serves terabytes of company filings via AWS S3 and structured financial data via a managed PostgreSQL instance, with infrastructure designed to scale into a production-ready platform. Technology stack included a full Typescript/Next.js frontend and backend with several backend microservices written with Python\'s FastAPI and Golang, with the main webapp hosted on Vercel and microservices on Google Cloud.'
 		},
 		{
 			name: 'Brain MRI Computer Vision Classifier',
