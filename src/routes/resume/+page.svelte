@@ -11,8 +11,8 @@
 			location: 'San Diego, California',
 			dates: 'February 2024 - Present',
 			description:
-				'Developed proprietary software for DoD clients within an R&D lab environment focused on analyzing cyber readiness of the warfighter and its associated assets. Maintained an active Secret clearance while pursuing Top-Secret clearance. Leveraged a modern technology stack including React, Golang, Docker, Python, various Microsoft Azure Government services, Terraform, and GitLab/GitHub CI/CD pipelines, alongside Palantir\'s Maven Smart Systems.',
-			tech: ['React', 'Go', 'Docker', 'Python', 'Azure Government', 'Terraform', 'GitLab', 'GitHub', 'CI/CD', "Maven Smart Systems"]
+				'Developed proprietary software for DoD clients within a mission-critical R&D lab environment, serving as the technical translator between domain experts and engineering teams to convert complex data pipelines and analysis workflows into scalable production systems. Designed and deployed full-stack applications and data pipelines that abstracted sophisticated cyber readiness analysis into intuitive interfaces, accelerating the research and analysis cycle for non-engineering stakeholders. Leveraged a modern technology stack including React, Golang, Docker, Python, various Microsoft Azure Government services, Terraform, and GitLab/GitHub CI/CD pipelines, alongside Palantir\'s Maven Smart Systems development platform. Maintained an active Secret clearance while pursuing Top-Secret clearance.',
+			tech: ['React', 'Go', 'Docker', 'Python', 'Azure Government', 'Terraform', 'GitLab', 'GitHub', 'CI/CD', 'Palantir Maven Smart Systems']
 		},
 		{
 			role: 'Lead Software Engineer',
@@ -20,7 +20,7 @@
 			location: 'San Diego, California',
 			dates: 'June 2023 - January 2024',
 			description:
-				'Spearheaded the end-to-end design and development of a proprietary financial data pipeline, independently architecting a solution that automated the identification of investment opportunities and company valuations using LLMs. Collaborated with company leaders and team members throughout the process, leading task distribution, code review, version control, and system architecture decisions. Integrated NLP and AI models, multi-source data APIs, AWS DynamoDB for storage, and LLMs to extract insights from SEC filings at scale. Engineered Python-based web sockets to consume high-volume daily filing streams and automated fund notifications via AWS Lambda.',
+				'Spearheaded the end-to-end design and development of a proprietary financial data pipeline, architecting a solution that automated the identification of investment opportunities and company valuations using LLMs. Collaborated with company leaders and team members throughout the process, leading task distribution, code review, version control, and system architecture decisions. Integrated NLP and AI models, multi-source data APIs, AWS DynamoDB for storage, and LLMs to extract insights from SEC filings at scale. Engineered Python-based web sockets to consume high-volume daily filing streams and automated fund notifications via AWS Lambda.',
 			tech: ['Python', 'NLP', 'LLMs', 'AWS DynamoDB', 'AWS Lambda', 'WebSockets', 'Data APIs']
 		},
 		{
@@ -45,7 +45,7 @@
 		{
 			name: 'QuantVision.ai',
 			description:
-				'Founded and built QuantVision.ai, a financial data platform centralizing company filings and financials, designed to scale into a comprehensive analysis solution for emerging and seasoned analysts.'
+				'Founded and built QuantVision.ai, a financial data platform centralizing company filings and financials, designed to scale into a comprehensive analysis solution for emerging and seasoned analysts. Technology stack included a full Typescript/Next.js frontend and backend with several backend microservices written with Python\'s FastAPI and Golang. Database is hosted on a managed SaaS platform called Supabase while the main webapp is hosted on Vercel, and various microservices are hosted on Google Cloud.'
 		},
 		{
 			name: 'Brain MRI Computer Vision Classifier',
@@ -53,7 +53,7 @@
 				'Built binary classifier for brain tumor MRIs in PyTorch using a pretrained ResNet-152 model.'
 		},
 		{
-			name: 'Machine Learning Models and Feature Selection Comparison',
+			name: 'Machine Learning Models and Feature Selection Comparison and Analysis',
 			description:
 				'Implemented an empirical comparison of supervised learning algorithms using a machine learning pipeline that automated feature selection, hyperparameter tuning, and model comparison.'
 		}
@@ -76,8 +76,6 @@
 	const expertise = [
 		'System Architecture & Design',
 		'Software Development',
-		'Amazon Web Services',
-		'Microsoft Azure',
 		'Machine Learning',
 		'Large Language Models',
 		'Agentic AI',
@@ -85,7 +83,29 @@
 		'Data Pipelines',
 		'Data Visualization',
 		'Statistical Analysis',
-		'Maven Smart Systems'
+		'Palantir Maven Smart Systems',
+		'Docker Containerization'
+	];
+
+	const technicalSkills = [
+		'Python',
+		'Golang',
+		'Typescript & React',
+		'SQL',
+		'Bash',
+		'FastAPI',
+		'Pandas',
+		'PyTorch',
+		'XGBoost',
+		'LangChain & DeepAgents',
+		'Scikit-Learn',
+		'CI/CD',
+		'Terraform',
+		'Docker',
+		'Amazon Web Services',
+		'Microsoft Azure',
+		'Tableau',
+		'Power BI'
 	];
 </script>
 
@@ -164,6 +184,15 @@
 			<div class="flex flex-wrap gap-3">
 				{#each expertise as area}
 					<span class="px-4 py-2 rounded-lg text-sm font-medium skill-chip">{area}</span>
+				{/each}
+			</div>
+		</section>
+
+		<section class="mt-12">
+			<h2 class="text-3xl font-bold mb-5 section-title" style="color: var(--color-primary)">Technical Skills</h2>
+			<div class="flex flex-wrap gap-3">
+				{#each technicalSkills as skill}
+					<span class="px-4 py-2 rounded-lg text-sm font-medium skill-chip">{skill}</span>
 				{/each}
 			</div>
 		</section>
