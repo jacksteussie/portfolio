@@ -11,8 +11,8 @@
 			location: 'San Diego, California',
 			dates: 'February 2024 - Present',
 			description:
-				'Developed proprietary software for DoD clients within an R&D lab environment focused on analyzing cyber readiness of the warfighter and its associated assets. Maintained an active Secret clearance while pursuing Top-Secret clearance. Leveraged a modern technology stack including React, Golang, Docker, Python, various Microsoft Azure Government services, Terraform, and GitLab/GitHub CI/CD pipelines, alongside Palantir Maven Smart Systems.',
-			tech: ['React', 'Go', 'Docker', 'Python', 'Azure Government', 'Terraform', 'GitLab', 'GitHub', 'CI/CD', "Palantir Maven"]
+				'Developed proprietary software for DoD clients within an R&D lab environment focused on analyzing cyber readiness of the warfighter and its associated assets. Maintained an active Secret clearance while pursuing Top-Secret clearance. Leveraged a modern technology stack including React, Golang, Docker, Python, various Microsoft Azure Government services, Terraform, and GitLab/GitHub CI/CD pipelines, alongside Palantir\'s Maven Smart Systems.',
+			tech: ['React', 'Go', 'Docker', 'Python', 'Azure Government', 'Terraform', 'GitLab', 'GitHub', 'CI/CD', "Maven Smart Systems"]
 		},
 		{
 			role: 'Lead Software Engineer',
@@ -85,7 +85,7 @@
 		'Data Pipelines',
 		'Data Visualization',
 		'Statistical Analysis',
-		'Palantir Maven Smart Systems'
+		'Maven Smart Systems'
 	];
 </script>
 
