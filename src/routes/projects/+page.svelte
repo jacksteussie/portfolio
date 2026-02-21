@@ -19,12 +19,13 @@
 		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 			{#each [
 				{
-					title: 'burnstack.ai',
+					title: 'Burnstack.ai',
 					description:
 						'Startup cost command center SaaS that centralizes cloud and AI spend (OpenAI, Anthropic, OpenRouter, Supabase, Tavily), with secure multi-tenant workspaces, encrypted provider integrations, automated sync/ingestion pipelines, and invoice-based cost import for reliable burn tracking.',
-					tech: ['TypeScript', 'OpenAI', 'Anthropic', 'OpenRouter', 'Supabase', 'Tavily'],
-					tags: ['Startup'],
-					status: 'Not Released Yet'
+					tech: [],
+					link: 'https://burnstack.ai',
+					tags: ['Next.js', 'Tailwind', 'TypeScript'],
+					status: 'To Be Released'
 				},
 				{
 					title: 'QuantVision.ai',
@@ -67,16 +68,18 @@
 							{/each}
 						</div>
 					{/if}
-					<div class="flex flex-wrap gap-2 mb-4">
-						{#each project.tech as tech}
-							<span
-								class="px-3 py-1 rounded-lg text-sm"
-								style="background: var(--color-background); color: var(--color-primary)"
-							>
-								{tech}
-							</span>
-						{/each}
-					</div>
+					{#if project.tech && project.tech.length > 0}
+						<div class="flex flex-wrap gap-2 mb-4">
+							{#each project.tech as tech}
+								<span
+									class="px-3 py-1 rounded-lg text-sm"
+									style="background: var(--color-background); color: var(--color-primary)"
+								>
+									{tech}
+								</span>
+							{/each}
+						</div>
+					{/if}
 					{#if project.link}
 						<a
 							href={project.link}
