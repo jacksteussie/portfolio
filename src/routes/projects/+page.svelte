@@ -22,9 +22,9 @@
 					title: 'Burnstack.ai',
 					description:
 						'Startup cost command center SaaS that centralizes cloud and AI spend (OpenAI, Anthropic, OpenRouter, Supabase, Tavily), with secure multi-tenant workspaces, encrypted provider integrations, automated sync/ingestion pipelines, and invoice-based cost import for reliable burn tracking.',
-					tech: [],
+					tech: ['Next.js', 'Tailwind', 'TypeScript'],
 					link: 'https://burnstack.ai',
-					tags: ['Next.js', 'Tailwind', 'TypeScript'],
+					tags: ['Startup'],
 					status: 'To Be Released'
 				},
 				{
