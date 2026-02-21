@@ -19,6 +19,14 @@
 		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 			{#each [
 				{
+					title: 'burnstack.ai',
+					description:
+						'Startup cost command center SaaS that centralizes cloud and AI spend (OpenAI, Anthropic, OpenRouter, Supabase, Tavily), with secure multi-tenant workspaces, encrypted provider integrations, automated sync/ingestion pipelines, and invoice-based cost import for reliable burn tracking.',
+					tech: ['TypeScript', 'OpenAI', 'Anthropic', 'OpenRouter', 'Supabase', 'Tavily'],
+					tags: ['Startup'],
+					status: 'Not Released Yet'
+				},
+				{
 					title: 'QuantVision.ai',
 					description: 'A SaaS platform for company financials and stock market analytics integrated with advanced agentic AI capabilities.',
 					tech: ["Next.js", "Python", "Tailwind", "Google Cloud", "LangChain DeepAgents", "LangFuse"],
