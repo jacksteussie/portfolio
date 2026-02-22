@@ -1,15 +1,39 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import skycubedLogo from '$lib/assets/experience-logos/skycubed.jpeg';
+	import tritonLogo from '$lib/assets/experience-logos/triton.jpeg';
+	import relayLogo from '$lib/assets/experience-logos/relay.jpeg';
+	import unigroupLogo from '$lib/assets/experience-logos/unigroup.jpeg';
+	import northgateLogo from '$lib/assets/experience-logos/northgate.jpeg';
+
+	interface ExperienceEntry {
+		role: string;
+		company: string;
+		location: string;
+		dates: string;
+		logo?: string;
+		employmentType?: string;
+		description?: string;
+		tech?: string[];
+	}
 
 	const profile =
 		'Full-stack software engineer with experience architecting and deploying AI/ML-powered data systems in mission-critical R&D environments, specializing in translating complex analytical workflows into scalable production applications.';
 
-	const experience = [
+	const experience: ExperienceEntry[] = [
+		{
+			role: 'Software Engineering Advisor',
+			company: 'Northgate Funds',
+			location: 'California, United States · Remote',
+			dates: 'Oct 2025 - Present',
+			logo: northgateLogo
+		},
 		{
 			role: 'Software Engineer',
 			company: 'Skycubed',
 			location: 'San Diego, California',
 			dates: 'February 2024 - Present',
+			logo: skycubedLogo,
 			description:
 				'Developed proprietary software for DoD clients within a mission-critical R&D lab environment, serving as the technical translator between domain experts and engineering teams to convert complex data pipelines and analysis workflows into scalable production systems. Owned the design and implementation of the platform ontology within Palantir\'s Maven Smart Systems, leading and mentoring the team on ontological data modeling and the downstream AI integration opportunities it unlocks. Designed and deployed full-stack applications and data pipelines that abstracted sophisticated cyber readiness analysis into intuitive interfaces, accelerating the research and analysis cycle for non-engineering stakeholders. Leveraged a modern technology stack including React, Golang, Docker, Python, various Microsoft Azure Government services, Terraform, and GitLab/GitHub CI/CD pipelines. Maintained an active Secret clearance while pursuing Top-Secret clearance. Additionally, took internal initiative to lead and author a technical proposal for a new contract opportunity, conducting independent research literature review to inform model selection and architecture decisions, and designing and prototyping a deep learning pipeline using a Siamese U-Net model with ResNet backbone to automatically detect and score structural damage from satellite imagery. Proposed a high-level system design spanning cloud infrastructure, geospatial visualization, and multi-modal data integration including auxiliary ML models for supplemental data sources.',
 			tech: ['React', 'Go', 'Docker', 'Python', 'Azure Government', 'Terraform', 'GitLab', 'GitHub', 'CI/CD', 'Palantir Maven Smart Systems']
@@ -19,6 +43,7 @@
 			company: 'Triton Funds LLC',
 			location: 'San Diego, California',
 			dates: 'June 2023 - January 2024',
+			logo: tritonLogo,
 			description:
 				'Owned all architecture and implementation decisions end to end for a proprietary financial data pipeline, engineering a solution that automated the identification of investment opportunities and company valuations using LLMs. Collaborated with company leaders and team members throughout the process, leading task distribution, code review, version control, and system architecture decisions. Integrated NLP and AI models, multi-source data APIs, AWS DynamoDB for storage, and LLMs to extract insights from SEC filings at scale. Engineered Python-based web sockets to consume high-volume daily filing streams and automated fund notifications via AWS Lambda.',
 			tech: ['Python', 'NLP', 'LLMs', 'AWS DynamoDB', 'AWS Lambda', 'WebSockets', 'Data APIs']
@@ -28,6 +53,7 @@
 			company: 'Relay Health',
 			location: 'Remote',
 			dates: 'January 2023 - June 2023',
+			logo: relayLogo,
 			description:
 				'Partnered with company leaders to develop data pipelines and automated data reporting systems, contributing to data analysis and system architecture design and implementation. Delivered an automated reporting pipeline encompassing daily activity reports, optimized user group assignments, and an activity-based segmentation model to identify high-risk users.'
 		},
@@ -36,6 +62,7 @@
 			company: 'UniGroup CA',
 			location: 'Remote',
 			dates: 'June 2021 - August 2021',
+			logo: unigroupLogo,
 			description:
 				'Completed an intensive data science training program working alongside professional data scientists, gaining hands-on experience applying machine learning concepts including linear regression, classification, decision trees, and neural networks using PyTorch to real-world datasets.'
 		}
@@ -128,18 +155,29 @@
 				{#each experience as role}
 					<article class="p-6 rounded-xl resume-card">
 						<div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-3">
-							<div>
-								<h3 class="text-2xl font-bold" style="color: var(--color-text-on-box)">{role.role}</h3>
-								<p class="text-lg" style="color: var(--color-text-on-box); opacity: 0.9">
-									{role.company} • {role.location}
-								</p>
+							<div class="flex items-start gap-4">
+								{#if role.logo}
+									<div class="experience-logo">
+										<img src={role.logo} alt="{role.company} logo" class="experience-logo-img" />
+									</div>
+								{/if}
+								<div>
+									<h3 class="text-2xl font-bold" style="color: var(--color-text-on-box)">{role.role}</h3>
+									<p class="text-lg" style="color: var(--color-text-on-box); opacity: 0.9">
+										{role.company}{#if role.employmentType} • {role.employmentType}{/if} • {role.location}
+									</p>
+								</div>
 							</div>
 							<p class="text-sm md:text-base font-medium" style="color: var(--color-text-on-box); opacity: 0.8">
 								{role.dates}
 							</p>
 						</div>
-						<p class="leading-relaxed mb-4" style="color: var(--color-text-on-box); opacity: 0.9">{role.description}</p>
-						{#if role.tech}
+						{#if role.description}
+							<p class="leading-relaxed mb-4" style="color: var(--color-text-on-box); opacity: 0.9">
+								{role.description}
+							</p>
+						{/if}
+						{#if role.tech && role.tech.length > 0}
 							<div class="flex flex-wrap gap-2">
 								{#each role.tech as tech}
 									<span class="px-3 py-1 rounded-lg text-sm skill-chip">{tech}</span>
@@ -213,5 +251,24 @@
 	.skill-chip {
 		background: var(--color-background);
 		color: var(--color-primary);
+	}
+
+	.experience-logo {
+		width: 3.5rem;
+		height: 3.5rem;
+		flex-shrink: 0;
+		border-radius: 0.75rem;
+		background: rgba(255, 255, 255, 0.95);
+		padding: 0.4rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+	}
+
+	.experience-logo-img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
 	}
 </style>
