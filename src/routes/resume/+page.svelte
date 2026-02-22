@@ -5,6 +5,8 @@
 	import relayLogo from '$lib/assets/experience-logos/relay.jpeg?url';
 	import unigroupLogo from '$lib/assets/experience-logos/unigroup.jpeg?url';
 	import northgateLogo from '$lib/assets/experience-logos/northgate.jpeg?url';
+	import burnstackLogo from '$lib/assets/project-logos/burnstack.svg?url';
+	import quantvisionLogo from '$lib/assets/project-logos/quantvision.svg?url';
 
 	interface ExperienceEntry {
 		role: string;
@@ -15,6 +17,12 @@
 		employmentType?: string;
 		description?: string;
 		tech?: string[];
+	}
+
+	interface ResumeProjectEntry {
+		name: string;
+		description: string;
+		logo?: string;
 	}
 
 	const profile =
@@ -68,9 +76,16 @@
 		}
 	];
 
-	const projects = [
+	const projects: ResumeProjectEntry[] = [
+		{
+			name: 'Burnstack.ai',
+			logo: burnstackLogo,
+			description:
+				'Startup cost command center SaaS that centralizes cloud and AI spend (OpenAI, Anthropic, OpenRouter, Supabase, Tavily), with secure multi-tenant workspaces, encrypted provider integrations, automated sync/ingestion pipelines, and invoice-based cost import for reliable burn tracking.'
+		},
 		{
 			name: 'QuantVision.ai',
+			logo: quantvisionLogo,
 			description:
 				'Founded and architected QuantVision.ai, a financial data platform centralizing company filings and financials, designed to scale into a comprehensive analysis solution for emerging and seasoned analysts. Serves terabytes of company filings via AWS S3 and structured financial data via a managed PostgreSQL instance, with infrastructure designed to scale into a production-ready platform. Technology stack included a full Typescript/Next.js frontend and backend with several backend microservices written with Python\'s FastAPI and Golang, with the main webapp hosted on Vercel and microservices on Google Cloud. Currently developing an agentic AI with LangChain\'s DeepAgents package that interfaces with a Neo4j knowledge graph containing industry and company relationships and Elasticsearch for full text and vector search to aid in proposal creation and investment theses.'
 		},
@@ -194,7 +209,14 @@
 			<div class="grid md:grid-cols-3 gap-4">
 				{#each projects as project}
 					<article class="p-5 rounded-xl resume-card">
-						<h3 class="text-xl font-bold mb-2" style="color: var(--color-text-on-box)">{project.name}</h3>
+						<div class="flex items-center gap-3 mb-2">
+							{#if project.logo}
+								<div class="project-logo-shell">
+									<img src={project.logo} alt="{project.name} logo" class="project-logo-img" />
+								</div>
+							{/if}
+							<h3 class="text-xl font-bold" style="color: var(--color-text-on-box)">{project.name}</h3>
+						</div>
 						<p class="leading-relaxed text-sm" style="color: var(--color-text-on-box); opacity: 0.9">{project.description}</p>
 					</article>
 				{/each}
@@ -267,6 +289,25 @@
 	}
 
 	.experience-logo-img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	.project-logo-shell {
+		width: 2.5rem;
+		height: 2.5rem;
+		flex-shrink: 0;
+		border-radius: 0.65rem;
+		background: rgba(255, 255, 255, 0.95);
+		padding: 0.3rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+	}
+
+	.project-logo-img {
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
