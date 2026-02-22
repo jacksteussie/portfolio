@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import burnstackLogo from '$lib/assets/project-logos/burnstack.svg?url';
+	import quantvisionLogo from '$lib/assets/project-logos/quantvision.svg?url';
 </script>
 
 <div class="min-h-screen px-6 py-12">
@@ -20,6 +22,7 @@
 			{#each [
 				{
 					title: 'Burnstack.ai',
+					logo: burnstackLogo,
 					description:
 						'Startup cost command center SaaS that centralizes cloud and AI spend (OpenAI, Anthropic, OpenRouter, Supabase, Tavily), with secure multi-tenant workspaces, encrypted provider integrations, automated sync/ingestion pipelines, and invoice-based cost import for reliable burn tracking.',
 					tech: ['Next.js', 'Tailwind', 'TypeScript'],
@@ -29,6 +32,7 @@
 				},
 				{
 					title: 'QuantVision.ai',
+					logo: quantvisionLogo,
 					description: 'A SaaS platform for company financials and stock market analytics integrated with advanced agentic AI capabilities.',
 					tech: ["Next.js", "Python", "Tailwind", "Google Cloud", "LangChain DeepAgents", "LangFuse"],
 					link: 'https://quantvision.ai',
@@ -40,10 +44,17 @@
 					class="project-card p-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
 					style="background: var(--color-box); animation-delay: {i * 0.1}s"
 				>
-					<div class="flex items-start justify-between mb-3">
-						<h3 class="text-2xl font-bold" style="color: var(--color-text-on-box)">
-							{project.title}
-						</h3>
+					<div class="flex items-start justify-between gap-3 mb-3">
+						<div class="flex items-center gap-3">
+							{#if project.logo}
+								<div class="project-logo-shell">
+									<img src={project.logo} alt="{project.title} logo" class="project-logo" />
+								</div>
+							{/if}
+							<h3 class="text-2xl font-bold" style="color: var(--color-text-on-box)">
+								{project.title}
+							</h3>
+						</div>
 						{#if project.status}
 							<span
 								class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap"
@@ -118,5 +129,24 @@
 
 	.project-card:hover {
 		transform: scale(1.05) translateY(-5px);
+	}
+
+	.project-logo-shell {
+		width: 2.75rem;
+		height: 2.75rem;
+		flex-shrink: 0;
+		border-radius: 0.75rem;
+		background: rgba(255, 255, 255, 0.95);
+		padding: 0.35rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+	}
+
+	.project-logo {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
 	}
 </style>
