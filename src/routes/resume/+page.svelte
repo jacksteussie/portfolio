@@ -295,12 +295,12 @@
 	}
 
 	.project-logo-shell {
-		width: 2.5rem;
-		height: 2.5rem;
+		width: 3.5rem;
+		height: 3.5rem;
 		flex-shrink: 0;
-		border-radius: 0.65rem;
+		border-radius: 0.75rem;
 		background: rgba(255, 255, 255, 0.95);
-		padding: 0.3rem;
+		padding: 0.4rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
