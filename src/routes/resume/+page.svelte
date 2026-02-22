@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import skycubedLogo from '$lib/assets/experience-logos/skycubed.jpeg';
-	import tritonLogo from '$lib/assets/experience-logos/triton.jpeg';
-	import relayLogo from '$lib/assets/experience-logos/relay.jpeg';
-	import unigroupLogo from '$lib/assets/experience-logos/unigroup.jpeg';
-	import northgateLogo from '$lib/assets/experience-logos/northgate.jpeg';
+	import skycubedLogo from '$lib/assets/experience-logos/skycubed.jpeg?url';
+	import tritonLogo from '$lib/assets/experience-logos/triton.jpeg?url';
+	import relayLogo from '$lib/assets/experience-logos/relay.jpeg?url';
+	import unigroupLogo from '$lib/assets/experience-logos/unigroup.jpeg?url';
+	import northgateLogo from '$lib/assets/experience-logos/northgate.jpeg?url';
 
 	interface ExperienceEntry {
 		role: string;
