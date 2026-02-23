@@ -47,8 +47,15 @@
 					<div class="flex flex-wrap items-start justify-between gap-3 mb-3">
 						<div class="flex items-center gap-3 min-w-0 flex-1 pr-2">
 							{#if project.logo}
-								<div class="project-logo-shell">
-									<img src={project.logo} alt="{project.title} logo" class="project-logo" />
+								<div class="project-logo-shell" style="width: 3.5rem; height: 3.5rem">
+									<img
+										src={project.logo}
+										alt="{project.title} logo"
+										class="project-logo"
+										width="56"
+										height="56"
+										style="width: 100%; height: 100%; object-fit: contain"
+									/>
 								</div>
 							{/if}
 							<h3 class="text-2xl font-bold min-w-0" style="color: var(--color-text-on-box)">

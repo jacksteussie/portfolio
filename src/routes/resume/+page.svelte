@@ -177,8 +177,15 @@
 						<div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-3">
 							<div class="flex items-start gap-4">
 								{#if role.logo}
-									<div class="experience-logo">
-										<img src={role.logo} alt="{role.company} logo" class="experience-logo-img" />
+									<div class="experience-logo" style="width: 3.5rem; height: 3.5rem">
+										<img
+											src={role.logo}
+											alt="{role.company} logo"
+											class="experience-logo-img"
+											width="56"
+											height="56"
+											style="width: 100%; height: 100%; object-fit: contain"
+										/>
 									</div>
 								{/if}
 								<div>
@@ -229,8 +236,15 @@
 					<article class="p-5 rounded-xl resume-card">
 						<div class="flex items-center gap-3 mb-2">
 							{#if project.logo}
-								<div class="project-logo-shell">
-									<img src={project.logo} alt="{project.name} logo" class="project-logo-img" />
+								<div class="project-logo-shell" style="width: 3.5rem; height: 3.5rem">
+									<img
+										src={project.logo}
+										alt="{project.name} logo"
+										class="project-logo-img"
+										width="56"
+										height="56"
+										style="width: 100%; height: 100%; object-fit: contain"
+									/>
 								</div>
 							{/if}
 							<h3 class="text-xl font-bold" style="color: var(--color-text-on-box)">{project.name}</h3>
