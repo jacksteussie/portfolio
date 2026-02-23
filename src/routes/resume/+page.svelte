@@ -2,15 +2,16 @@
 	import { base } from '$app/paths';
 	import skycubedLogo from '$lib/assets/experience-logos/skycubed.jpeg?url';
 	import tritonLogo from '$lib/assets/experience-logos/triton.jpeg?url';
-	import relayLogo from '$lib/assets/experience-logos/relay.jpeg?url';
-	import unigroupLogo from '$lib/assets/experience-logos/unigroup.jpeg?url';
-	import northgateLogo from '$lib/assets/experience-logos/northgate.jpeg?url';
+	import relayLogo from '$lib/assets/experience-logos/relay.png?url';
+	import unigroupLogo from '$lib/assets/experience-logos/unigroup.svg?url';
+	import northgateLogo from '$lib/assets/experience-logos/northgatefunds.svg?url';
 	import burnstackLogo from '$lib/assets/project-logos/burnstack.svg?url';
 	import quantvisionLogo from '$lib/assets/project-logos/quantvision.svg?url';
 
 	interface ExperienceEntry {
 		role: string;
 		company: string;
+		companyLink?: string;
 		location: string;
 		dates: string;
 		logo?: string;
@@ -32,6 +33,7 @@
 		{
 			role: 'Software Engineering Advisor',
 			company: 'Northgate Funds',
+			companyLink: 'https://northgatefunds.com/',
 			location: 'California, United States · Remote',
 			dates: 'Oct 2025 - Present',
 			logo: northgateLogo
@@ -39,6 +41,7 @@
 		{
 			role: 'Software Engineer',
 			company: 'Skycubed',
+			companyLink: 'https://www.skycubed.com/',
 			location: 'San Diego, California',
 			dates: 'February 2024 - Present',
 			logo: skycubedLogo,
@@ -59,6 +62,7 @@
 		{
 			role: 'Data Science Intern',
 			company: 'Relay Health',
+			companyLink: 'https://www.joinrelay.app/',
 			location: 'Remote',
 			dates: 'January 2023 - June 2023',
 			logo: relayLogo,
@@ -68,6 +72,7 @@
 		{
 			role: 'Data Science Intern',
 			company: 'UniGroup CA',
+			companyLink: 'https://www.unigroup.com/',
 			location: 'Remote',
 			dates: 'June 2021 - August 2021',
 			logo: unigroupLogo,
@@ -179,7 +184,20 @@
 								<div>
 									<h3 class="text-2xl font-bold" style="color: var(--color-text-on-box)">{role.role}</h3>
 									<p class="text-lg" style="color: var(--color-text-on-box); opacity: 0.9">
-										{role.company}{#if role.employmentType} • {role.employmentType}{/if} • {role.location}
+										{#if role.companyLink}
+											<a
+												href={role.companyLink}
+												target="_blank"
+												rel="noopener noreferrer"
+												class="company-link"
+												style="color: var(--color-text-on-box)"
+											>
+												{role.company}
+											</a>
+										{:else}
+											{role.company}
+										{/if}
+										{#if role.employmentType} • {role.employmentType}{/if} • {role.location}
 									</p>
 								</div>
 							</div>
@@ -311,5 +329,14 @@
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
+	}
+
+	.company-link {
+		text-decoration: underline;
+		text-underline-offset: 0.15em;
+	}
+
+	.company-link:hover {
+		opacity: 0.85;
 	}
 </style>
