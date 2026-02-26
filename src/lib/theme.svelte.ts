@@ -2,9 +2,7 @@ import { browser } from '$app/environment';
 
 class Theme {
 	current = $state<'light' | 'dark'>(
-		(browser && (localStorage.getItem('theme') as 'light' | 'dark')) ||
-			(browser && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') ||
-			'light'
+		(browser && (localStorage.getItem('theme') as 'light' | 'dark')) || 'light'
 	);
 
 	constructor() {
@@ -31,8 +29,6 @@ class Theme {
 			const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
 			if (savedTheme) {
 				this.current = savedTheme;
-			} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-				this.current = 'dark';
 			}
 			this.apply();
 		}
