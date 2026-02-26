@@ -26,14 +26,14 @@
 		<div class="flex flex-wrap justify-center gap-6 mb-12 mt-8">
 				<a
 					href="{base}/projects"
-					class="nav-btn px-8 py-4 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl font-medium"
+					class="nav-btn hover-lift rounded-xl"
 					style="background: var(--color-box); color: var(--color-text-on-box)"
 				>
 					Projects
 				</a>
 				<a
 					href="{base}/resume"
-					class="nav-btn px-8 py-4 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl font-medium"
+					class="nav-btn hover-lift rounded-xl"
 					style="background: var(--color-box); color: var(--color-text-on-box)"
 				>
 					Resume
@@ -46,7 +46,7 @@
 					href="https://github.com/jacksteussie"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="contact-icon transition-all duration-300 hover:scale-125"
+					class="contact-icon hover-lift"
 					style="color: var(--color-primary)"
 					aria-label="GitHub"
 				>
@@ -58,7 +58,7 @@
 					href="https://www.linkedin.com/in/jacksteussie/"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="contact-icon transition-all duration-300 hover:scale-125"
+					class="contact-icon hover-lift"
 					style="color: var(--color-primary)"
 					aria-label="LinkedIn"
 				>
@@ -68,7 +68,7 @@
 				</a>
 				<a
 					href="mailto:jack@quantvision.com"
-					class="contact-icon transition-all duration-300 hover:scale-125"
+					class="contact-icon hover-lift"
 					style="color: var(--color-primary)"
 					aria-label="Email"
 				>
@@ -110,17 +110,6 @@
 
 	.accent-line {
 		animation: slideIn 0.6s ease-out 0.3s both;
-	}
-
-	.nav-btn {
-		background: var(--color-box) !important;
-		color: var(--color-text-on-box) !important;
-	}
-
-	.nav-btn:hover {
-		transform: scale(1.1) translateY(-2px);
-		background: var(--color-box) !important;
-		color: var(--color-text-on-box) !important;
 	}
 
 	.contact-icon {
