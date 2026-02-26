@@ -158,4 +158,13 @@
 		height: 100%;
 		object-fit: contain;
 	}
+
+	.page-header-box {
+		transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+	}
+
+	:global(.dark) .page-header-box {
+		box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+		border: 1px solid rgba(255, 255, 255, 0.05);
+	}
 </style>

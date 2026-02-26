@@ -8,26 +8,30 @@
     --default-font-family: 'IBM Plex Sans', 'sans-serif';
     --font-weight-bold: 600;
 
-    /* Light theme colors (default) */
+    /* Base Colors */
     --color-primary: oklch(15% 0 0);
     --color-background: oklch(98% 0 0);
     --color-box: oklch(15% 0 0);
     --color-text-on-box: oklch(98% 0 0);
-
-    /* Dark theme colors */
-    --color-primary-dark: oklch(15% 0 0);
-    --color-background-dark: oklch(98% 0 0);
-    --color-box-dark: oklch(15% 0 0);
-    --color-text-on-box-dark: oklch(98% 0 0);
+    --color-primary-rgb: 0, 0, 0;
 }
 
-/* Apply dark theme colors based on system preference */
+:root.dark {
+    --color-primary: oklch(98% 0 0);
+    --color-background: oklch(10% 0 0);
+    --color-box: oklch(25% 0 0);
+    --color-text-on-box: oklch(98% 0 0);
+    --color-primary-rgb: 255, 255, 255;
+}
+
+/* Fallback to system preference if no explicit class is set */
 @media (prefers-color-scheme: dark) {
-    :root {
-        --color-primary: var(--color-primary-dark);
-        --color-background: var(--color-background-dark);
-        --color-box: var(--color-box-dark);
-        --color-text-on-box: var(--color-text-on-box-dark);
+    :root:not(.light) {
+        --color-primary: oklch(98% 0 0);
+        --color-background: oklch(10% 0 0);
+        --color-box: oklch(25% 0 0);
+        --color-text-on-box: oklch(98% 0 0);
+        --color-primary-rgb: 255, 255, 255;
     }
 }
 
@@ -36,13 +40,44 @@ body {
     padding: 0;
     min-height: 100vh;
     overflow-x: hidden;
+    color: var(--color-primary);
+    transition: color 0.3s ease;
 }
 
-.page-header-box {
+.page-header-box, .content-box {
     background: var(--color-background);
     padding: 3rem;
     border-radius: 1.5rem;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+:root.dark .page-header-box, :root.dark .content-box {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-card, .resume-card {
+    background: var(--color-box);
+    border-radius: 0.75rem;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-chip {
+    background: var(--color-box);
+    color: var(--color-text-on-box);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+:root.dark .skill-chip {
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+.experience-logo, .project-logo-shell {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 0.75rem;
+    transition: background-color 0.3s ease;
 }
 
 /* Custom utility classes */

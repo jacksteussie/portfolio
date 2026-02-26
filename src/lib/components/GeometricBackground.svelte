@@ -1,11 +1,14 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { theme } from '$lib/theme.svelte';
 
 	let canvas: HTMLCanvasElement;
 	let ctx: CanvasRenderingContext2D;
 	let shapes: Shape[] = [];
 	let animationId: number;
 	const SHAPE_COUNT = 28;
+
+	let primaryRGB = $derived(theme.current === 'dark' ? '255, 255, 255' : '0, 0, 0');
 
 	interface Shape {
 		x: number;
@@ -44,7 +47,7 @@
 			dx: (Math.random() - 0.5) * 0.5,
 			dy: (Math.random() - 0.5) * 0.5,
 			type: types[Math.floor(Math.random() * types.length)],
-			opacity: Math.random() * 0.15 + 0.05
+			opacity: Math.random() * 0.3 + 0.6
 		};
 	}
 
@@ -410,8 +413,8 @@
 			ctx.rotate(shape.rotation);
 			ctx.translate(-shape.x, -shape.y);
 
-			ctx.strokeStyle = `rgba(var(--color-primary-rgb), ${shape.opacity})`;
-			ctx.lineWidth = 2;
+			ctx.strokeStyle = `rgba(${primaryRGB}, ${shape.opacity})`;
+			ctx.lineWidth = 1;
 
 			switch (shape.type) {
 				case 'triangle':
@@ -459,15 +462,3 @@
 </script>
 
 <canvas bind:this={canvas} class="fixed inset-0 pointer-events-none -z-10"></canvas>
-
-<style>
-	:global(:root) {
-		--color-primary-rgb: 0, 0, 0;
-	}
-
-	@media (prefers-color-scheme: dark) {
-		:global(:root) {
-			--color-primary-rgb: 255, 255, 255;
-		}
-	}
-</style>

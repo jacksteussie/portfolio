@@ -47,6 +47,13 @@
       "_utils.js"
     ]
   },
+  "_quantvision.js": {
+    "file": "chunks/quantvision.js",
+    "name": "quantvision",
+    "assets": [
+      "app/immutable/assets/burnstack.DGQNzcXt.svg"
+    ]
+  },
   "_shared.js": {
     "file": "chunks/shared.js",
     "name": "shared",
@@ -117,6 +124,10 @@
     "file": "app/immutable/assets/triton.CkKwRNTu.jpeg",
     "src": "src/lib/assets/experience-logos/triton.jpeg"
   },
+  "src/lib/assets/project-logos/burnstack.svg": {
+    "file": "app/immutable/assets/burnstack.DGQNzcXt.svg",
+    "src": "src/lib/assets/project-logos/burnstack.svg"
+  },
   "src/routes/+layout.svelte": {
     "file": "entries/pages/_layout.svelte.js",
     "name": "entries/pages/_layout.svelte",
@@ -131,7 +142,7 @@
       "_utils.js"
     ],
     "css": [
-      "app/immutable/assets/_layout.CC53Thtd.css"
+      "app/immutable/assets/_layout.DGE7VsIl.css"
     ]
   },
   "src/routes/+layout.ts": {
@@ -153,7 +164,7 @@
       "_state.svelte.js"
     ],
     "css": [
-      "app/immutable/assets/_page.Cr2qGoX_.css"
+      "app/immutable/assets/_page.DfPpglzd.css"
     ]
   },
   "src/routes/projects/+page.svelte": {
@@ -164,10 +175,11 @@
     "imports": [
       "_index.js",
       "_utils.js",
+      "_quantvision.js",
       "_context.js"
     ],
     "css": [
-      "app/immutable/assets/_page.DjFVrG9p.css"
+      "app/immutable/assets/_page.DaFWJ-e8.css"
     ]
   },
   "src/routes/resume/+page.svelte": {
@@ -178,10 +190,11 @@
     "imports": [
       "_index.js",
       "_utils.js",
+      "_quantvision.js",
       "_context.js"
     ],
     "css": [
-      "app/immutable/assets/_page.Bwykr9Ih.css"
+      "app/immutable/assets/_page.BBZbMMpR.css"
     ],
     "assets": [
       "app/immutable/assets/skycubed.CF9FO4aT.jpeg",

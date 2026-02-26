@@ -296,15 +296,16 @@
 		background: var(--color-box);
 		border: 1px solid rgba(255, 255, 255, 0.15);
 		box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+		transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	:global(.dark) .resume-card {
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+		border-color: rgba(255, 255, 255, 0.05);
 	}
 
 	.section-title {
 		letter-spacing: 0.01em;
-	}
-
-	.skill-chip {
-		background: var(--color-background);
-		color: var(--color-primary);
 	}
 
 	.experience-logo {
@@ -352,5 +353,14 @@
 
 	.company-link:hover {
 		opacity: 0.85;
+	}
+
+	.page-header-box {
+		transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+	}
+
+	:global(.dark) .page-header-box {
+		box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+		border: 1px solid rgba(255, 255, 255, 0.05);
 	}
 </style>
