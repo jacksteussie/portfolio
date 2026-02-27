@@ -355,6 +355,28 @@
 		opacity: 0.85;
 	}
 
+	.skill-chip {
+		display: inline-block;
+		background: var(--color-box);
+		color: var(--color-text-on-box);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		transition: all 0.3s ease;
+	}
+
+	:global(.dark) .skill-chip {
+		border-color: rgba(255, 255, 255, 0.05);
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+	}
+
+	/* Force visibility for chips inside dark resume-cards */
+	.resume-card .skill-chip {
+		background: var(--color-background) !important;
+		color: var(--color-primary) !important;
+		border: none !important;
+		box-shadow: none !important;
+	}
+
 	.page-header-box {
 		transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 	}

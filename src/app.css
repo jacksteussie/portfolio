@@ -98,10 +98,6 @@ body {
     transform: translateY(-4px) scale(1.15);
 }
 
-:root.dark .skill-chip {
-    border-color: rgba(255, 255, 255, 0.05);
-}
-
 .experience-logo, .project-logo-shell {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 0.75rem;
