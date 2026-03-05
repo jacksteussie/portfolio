@@ -64,7 +64,7 @@ function Nav($$renderer, $$props) {
         "active": store_get($$store_subs ??= {}, "$page", page).url.pathname === link.path
       })}${attr_style(`color: var(--color-primary); opacity: ${stringify(store_get($$store_subs ??= {}, "$page", page).url.pathname === link.path ? 1 : 0.7)}`)}>${escape_html(link.name)}</a></li>`);
     }
-    $$renderer2.push(`<!--]--></ul> <button class="p-2 rounded-full transition-colors duration-200 hover:bg-black/5 dark:hover:bg-white/5" aria-label="Toggle theme" style="color: var(--color-primary)">`);
+    $$renderer2.push(`<!--]--></ul> <button class="p-2 rounded-full transition-colors duration-200 hover:bg-black/5 dark:hover:bg-white/5 cursor-pointer" aria-label="Toggle theme" style="color: var(--color-primary)">`);
     if (theme.current === "light") {
       $$renderer2.push("<!--[-->");
       $$renderer2.push(`<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>`);
@@ -82,6 +82,7 @@ function _layout($$renderer, $$props) {
     head("12qhfyh", $$renderer2, ($$renderer3) => {
       $$renderer3.push(`<link rel="icon"${attr("href", favicon)}/>`);
     });
+    $$renderer2.push(`<div class="fixed inset-0 -z-20 transition-colors duration-300" style="background: var(--color-background)"></div> `);
     GeometricBackground($$renderer2);
     $$renderer2.push(`<!----> <div class="relative z-10">`);
     Nav($$renderer2);

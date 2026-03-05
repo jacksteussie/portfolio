@@ -1,6 +1,6 @@
 {
   ".svelte-kit/generated/client-optimized/app.js": {
-    "file": "app/immutable/entry/app.DEWAdbdR.js",
+    "file": "app/immutable/entry/app.B6_DakDI.js",
     "name": "entry/app",
     "src": ".svelte-kit/generated/client-optimized/app.js",
     "isEntry": true,
@@ -22,7 +22,7 @@
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/0.js": {
-    "file": "app/immutable/nodes/0.BcP3jpJ5.js",
+    "file": "app/immutable/nodes/0.CsLY35qY.js",
     "name": "nodes/0",
     "src": ".svelte-kit/generated/client-optimized/nodes/0.js",
     "isEntry": true,
@@ -40,15 +40,15 @@
       "_B-oiFmH3.js",
       "_BGhV3ald.js",
       "_sKEOLr9G.js",
-      "_B5isUw3n.js",
-      "_CSr-UOd2.js"
+      "_Cw2ra6mF.js",
+      "_CjkYC-eq.js"
     ],
     "css": [
-      "app/immutable/assets/0.DGE7VsIl.css"
+      "app/immutable/assets/0.DMOy3RuQ.css"
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/1.js": {
-    "file": "app/immutable/nodes/1.DYu0K0mK.js",
+    "file": "app/immutable/nodes/1.BXgYSeYT.js",
     "name": "nodes/1",
     "src": ".svelte-kit/generated/client-optimized/nodes/1.js",
     "isEntry": true,
@@ -58,11 +58,11 @@
       "_YiAJB0eN.js",
       "_ghmXt1ob.js",
       "_BGhV3ald.js",
-      "_CSpnd3DL.js"
+      "_BrK09D4w.js"
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/2.js": {
-    "file": "app/immutable/nodes/2.sP2NUiDf.js",
+    "file": "app/immutable/nodes/2.B7rUtKoy.js",
     "name": "nodes/2",
     "src": ".svelte-kit/generated/client-optimized/nodes/2.js",
     "isEntry": true,
@@ -75,15 +75,15 @@
       "_BEO_wB6v.js",
       "_BGhV3ald.js",
       "_sKEOLr9G.js",
-      "_B5isUw3n.js",
-      "_CSr-UOd2.js"
+      "_Cw2ra6mF.js",
+      "_CjkYC-eq.js"
     ],
     "css": [
-      "app/immutable/assets/2.DfPpglzd.css"
+      "app/immutable/assets/2.-97orwik.css"
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/3.js": {
-    "file": "app/immutable/nodes/3.CsDZJqkR.js",
+    "file": "app/immutable/nodes/3.CxGnMhIU.js",
     "name": "nodes/3",
     "src": ".svelte-kit/generated/client-optimized/nodes/3.js",
     "isEntry": true,
@@ -96,15 +96,15 @@
       "_CNPn0WId.js",
       "_BEO_wB6v.js",
       "_B-oiFmH3.js",
-      "_CSr-UOd2.js",
-      "_EDQ5aUse.js"
+      "_CjkYC-eq.js",
+      "_CDkzCrW0.js"
     ],
     "css": [
-      "app/immutable/assets/3.DaFWJ-e8.css"
+      "app/immutable/assets/3.BRAc8FBB.css"
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/4.js": {
-    "file": "app/immutable/nodes/4.DxUgbNid.js",
+    "file": "app/immutable/nodes/4.CQjx9Ne7.js",
     "name": "nodes/4",
     "src": ".svelte-kit/generated/client-optimized/nodes/4.js",
     "isEntry": true,
@@ -116,15 +116,19 @@
       "_zLimZR3m.js",
       "_CNPn0WId.js",
       "_BEO_wB6v.js",
-      "_CSr-UOd2.js",
-      "_EDQ5aUse.js"
+      "_CjkYC-eq.js",
+      "_CDkzCrW0.js"
     ],
     "css": [
-      "app/immutable/assets/4.BBZbMMpR.css"
+      "app/immutable/assets/4.DBSFBZTN.css"
     ],
     "assets": [
       "app/immutable/assets/skycubed.CF9FO4aT.jpeg",
-      "app/immutable/assets/triton.CkKwRNTu.jpeg"
+      "app/immutable/assets/triton.CkKwRNTu.jpeg",
+      "app/immutable/assets/comptia-security-plus.CpvhDVcz.png",
+      "app/immutable/assets/dod-seal.DHUUpkQ6.svg",
+      "app/immutable/assets/georgia-tech-logo.d7qvOPWF.png",
+      "app/immutable/assets/ucsd-logo.zZiV4RGU.png"
     ]
   },
   "_21LMHoYK.js": {
@@ -141,13 +145,6 @@
       "_ghmXt1ob.js"
     ]
   },
-  "_B5isUw3n.js": {
-    "file": "app/immutable/chunks/B5isUw3n.js",
-    "name": "stores",
-    "imports": [
-      "_CSpnd3DL.js"
-    ]
-  },
   "_BEO_wB6v.js": {
     "file": "app/immutable/chunks/BEO_wB6v.js",
     "name": "attributes",
@@ -162,6 +159,22 @@
       "_ghmXt1ob.js"
     ]
   },
+  "_BrK09D4w.js": {
+    "file": "app/immutable/chunks/BrK09D4w.js",
+    "name": "entry",
+    "imports": [
+      "_ghmXt1ob.js",
+      "_21LMHoYK.js",
+      "_CjkYC-eq.js"
+    ]
+  },
+  "_CDkzCrW0.js": {
+    "file": "app/immutable/chunks/CDkzCrW0.js",
+    "name": "quantvision",
+    "assets": [
+      "app/immutable/assets/burnstack.DGQNzcXt.svg"
+    ]
+  },
   "_CNPn0WId.js": {
     "file": "app/immutable/chunks/CNPn0WId.js",
     "name": "each",
@@ -169,18 +182,16 @@
       "_ghmXt1ob.js"
     ]
   },
-  "_CSpnd3DL.js": {
-    "file": "app/immutable/chunks/CSpnd3DL.js",
-    "name": "entry",
-    "imports": [
-      "_ghmXt1ob.js",
-      "_21LMHoYK.js",
-      "_CSr-UOd2.js"
-    ]
-  },
-  "_CSr-UOd2.js": {
-    "file": "app/immutable/chunks/CSr-UOd2.js",
+  "_CjkYC-eq.js": {
+    "file": "app/immutable/chunks/CjkYC-eq.js",
     "name": "client"
+  },
+  "_Cw2ra6mF.js": {
+    "file": "app/immutable/chunks/Cw2ra6mF.js",
+    "name": "stores",
+    "imports": [
+      "_BrK09D4w.js"
+    ]
   },
   "_Dh-xClIk.js": {
     "file": "app/immutable/chunks/Dh-xClIk.js",
@@ -194,13 +205,6 @@
     "name": "disclose-version",
     "imports": [
       "_ghmXt1ob.js"
-    ]
-  },
-  "_EDQ5aUse.js": {
-    "file": "app/immutable/chunks/EDQ5aUse.js",
-    "name": "quantvision",
-    "assets": [
-      "app/immutable/assets/burnstack.DGQNzcXt.svg"
     ]
   },
   "_L4L5n4Qr.js": {
@@ -238,13 +242,29 @@
     ]
   },
   "node_modules/.pnpm/@sveltejs+kit@2.50.2_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.49.2_vite@7.3.1_@types_e1c99b341a9f7da4f59fa73ab77276cf/node_modules/@sveltejs/kit/src/runtime/client/entry.js": {
-    "file": "app/immutable/entry/start.CHHdpkNQ.js",
+    "file": "app/immutable/entry/start.BxFNMbrN.js",
     "name": "entry/start",
     "src": "node_modules/.pnpm/@sveltejs+kit@2.50.2_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.49.2_vite@7.3.1_@types_e1c99b341a9f7da4f59fa73ab77276cf/node_modules/@sveltejs/kit/src/runtime/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_CSpnd3DL.js"
+      "_BrK09D4w.js"
     ]
+  },
+  "src/lib/assets/credential-logos/comptia-security-plus.png": {
+    "file": "app/immutable/assets/comptia-security-plus.CpvhDVcz.png",
+    "src": "src/lib/assets/credential-logos/comptia-security-plus.png"
+  },
+  "src/lib/assets/credential-logos/dod-seal.svg": {
+    "file": "app/immutable/assets/dod-seal.DHUUpkQ6.svg",
+    "src": "src/lib/assets/credential-logos/dod-seal.svg"
+  },
+  "src/lib/assets/education-logos/georgia-tech-logo.png": {
+    "file": "app/immutable/assets/georgia-tech-logo.d7qvOPWF.png",
+    "src": "src/lib/assets/education-logos/georgia-tech-logo.png"
+  },
+  "src/lib/assets/education-logos/ucsd-logo.png": {
+    "file": "app/immutable/assets/ucsd-logo.zZiV4RGU.png",
+    "src": "src/lib/assets/education-logos/ucsd-logo.png"
   },
   "src/lib/assets/experience-logos/skycubed.jpeg": {
     "file": "app/immutable/assets/skycubed.CF9FO4aT.jpeg",

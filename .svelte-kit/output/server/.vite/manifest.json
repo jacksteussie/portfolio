@@ -116,6 +116,22 @@
       "_internal.js"
     ]
   },
+  "src/lib/assets/credential-logos/comptia-security-plus.png": {
+    "file": "app/immutable/assets/comptia-security-plus.CpvhDVcz.png",
+    "src": "src/lib/assets/credential-logos/comptia-security-plus.png"
+  },
+  "src/lib/assets/credential-logos/dod-seal.svg": {
+    "file": "app/immutable/assets/dod-seal.DHUUpkQ6.svg",
+    "src": "src/lib/assets/credential-logos/dod-seal.svg"
+  },
+  "src/lib/assets/education-logos/georgia-tech-logo.png": {
+    "file": "app/immutable/assets/georgia-tech-logo.d7qvOPWF.png",
+    "src": "src/lib/assets/education-logos/georgia-tech-logo.png"
+  },
+  "src/lib/assets/education-logos/ucsd-logo.png": {
+    "file": "app/immutable/assets/ucsd-logo.zZiV4RGU.png",
+    "src": "src/lib/assets/education-logos/ucsd-logo.png"
+  },
   "src/lib/assets/experience-logos/skycubed.jpeg": {
     "file": "app/immutable/assets/skycubed.CF9FO4aT.jpeg",
     "src": "src/lib/assets/experience-logos/skycubed.jpeg"
@@ -142,7 +158,7 @@
       "_utils.js"
     ],
     "css": [
-      "app/immutable/assets/_layout.DGE7VsIl.css"
+      "app/immutable/assets/_layout.DMOy3RuQ.css"
     ]
   },
   "src/routes/+layout.ts": {
@@ -164,7 +180,7 @@
       "_state.svelte.js"
     ],
     "css": [
-      "app/immutable/assets/_page.DfPpglzd.css"
+      "app/immutable/assets/_page.-97orwik.css"
     ]
   },
   "src/routes/projects/+page.svelte": {
@@ -179,7 +195,7 @@
       "_context.js"
     ],
     "css": [
-      "app/immutable/assets/_page.DaFWJ-e8.css"
+      "app/immutable/assets/_page.BRAc8FBB.css"
     ]
   },
   "src/routes/resume/+page.svelte": {
@@ -194,11 +210,15 @@
       "_context.js"
     ],
     "css": [
-      "app/immutable/assets/_page.BBZbMMpR.css"
+      "app/immutable/assets/_page.DBSFBZTN.css"
     ],
     "assets": [
       "app/immutable/assets/skycubed.CF9FO4aT.jpeg",
-      "app/immutable/assets/triton.CkKwRNTu.jpeg"
+      "app/immutable/assets/triton.CkKwRNTu.jpeg",
+      "app/immutable/assets/comptia-security-plus.CpvhDVcz.png",
+      "app/immutable/assets/dod-seal.DHUUpkQ6.svg",
+      "app/immutable/assets/georgia-tech-logo.d7qvOPWF.png",
+      "app/immutable/assets/ucsd-logo.zZiV4RGU.png"
     ]
   }
 }

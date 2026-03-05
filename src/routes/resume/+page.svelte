@@ -7,6 +7,10 @@
 	import northgateLogo from '$lib/assets/experience-logos/northgatefunds.svg?url';
 	import burnstackLogo from '$lib/assets/project-logos/burnstack.svg?url';
 	import quantvisionLogo from '$lib/assets/project-logos/quantvision.svg?url';
+	import compTiaSecurityPlusLogo from '$lib/assets/credential-logos/comptia-security-plus.png?url';
+	import dodSealLogo from '$lib/assets/credential-logos/dod-seal.svg?url';
+	import georgiaTechLogo from '$lib/assets/education-logos/georgia-tech-logo.png?url';
+	import ucsdLogo from '$lib/assets/education-logos/ucsd-logo.png?url';
 
 	interface ExperienceEntry {
 		role: string;
@@ -23,6 +27,20 @@
 	interface ResumeProjectEntry {
 		name: string;
 		description: string;
+		logo?: string;
+	}
+
+	interface CredentialEntry {
+		title: string;
+		issuer?: string;
+		logo?: string;
+	}
+
+	interface EducationEntry {
+		degree: string;
+		year: string;
+		school: string;
+		details?: string;
 		logo?: string;
 	}
 
@@ -106,17 +124,30 @@
 		}
 	];
 
-	const education = [
+	const education: EducationEntry[] = [
 		{
 			degree: 'M.S. Computer Science (Machine Learning Concentration)',
 			year: '2028',
-			school: 'Georgia Institute of Technology'
+			school: 'Georgia Institute of Technology',
+			logo: georgiaTechLogo
 		},
 		{
 			degree: 'B.S. Cognitive Science (Machine Learning Concentration)',
 			year: '2022',
 			school: 'University of California, San Diego',
-			details: 'Minors: Computer Science, Mathematics'
+			details: 'Minors: Computer Science, Mathematics',
+			logo: ucsdLogo
+		}
+	];
+
+	const credentials: CredentialEntry[] = [
+		{
+			title: 'CompTIA Security+ Certification',
+			logo: compTiaSecurityPlusLogo
+		},
+		{
+			title: 'DoD Secret Clearance',
+			logo: dodSealLogo
 		}
 	];
 
@@ -231,7 +262,7 @@
 
 		<section class="mb-12">
 			<h2 class="text-3xl font-bold mb-5 section-title" style="color: var(--color-primary)">Projects</h2>
-			<div class="grid md:grid-cols-3 gap-4">
+			<div class="space-y-4">
 				{#each projects as project}
 					<article class="p-5 rounded-xl resume-card">
 						<div class="flex items-center gap-3 mb-2">
@@ -260,11 +291,55 @@
 			<div class="grid md:grid-cols-2 gap-4">
 				{#each education as school}
 					<article class="p-5 rounded-xl resume-card">
-						<p class="text-sm font-medium mb-1" style="color: var(--color-text-on-box); opacity: 0.8">{school.year}</p>
-						<h3 class="text-xl font-bold mb-1" style="color: var(--color-text-on-box)">{school.degree}</h3>
-						<p class="mb-1" style="color: var(--color-text-on-box); opacity: 0.9">{school.school}</p>
-						{#if school.details}
-							<p class="text-sm" style="color: var(--color-text-on-box); opacity: 0.8">{school.details}</p>
+						<div class="flex items-start gap-4">
+							{#if school.logo}
+								<div class="experience-logo" style="width: 3.5rem; height: 3.5rem">
+									<img
+										src={school.logo}
+										alt={`${school.school} logo`}
+										class="experience-logo-img"
+										width="56"
+										height="56"
+										style="width: 100%; height: 100%; object-fit: contain"
+									/>
+								</div>
+							{/if}
+							<div>
+								<p class="text-sm font-medium mb-1" style="color: var(--color-text-on-box); opacity: 0.8">{school.year}</p>
+								<h3 class="text-xl font-bold mb-1" style="color: var(--color-text-on-box)">{school.degree}</h3>
+								<p class="mb-1" style="color: var(--color-text-on-box); opacity: 0.9">{school.school}</p>
+								{#if school.details}
+									<p class="text-sm" style="color: var(--color-text-on-box); opacity: 0.8">{school.details}</p>
+								{/if}
+							</div>
+						</div>
+					</article>
+				{/each}
+			</div>
+		</section>
+
+		<section class="mb-12">
+			<h2 class="text-3xl font-bold mb-5 section-title" style="color: var(--color-primary)">Certifications &amp; Clearance</h2>
+			<div class="grid md:grid-cols-2 gap-4">
+				{#each credentials as credential}
+					<article class="p-5 rounded-xl resume-card">
+						<div class="flex items-center gap-3 mb-1">
+							{#if credential.logo}
+								<div class="experience-logo" style="width: 4rem; height: 4rem">
+									<img
+										src={credential.logo}
+										alt={`${credential.title} logo`}
+										class="experience-logo-img"
+										width="64"
+										height="64"
+										style="width: 100%; height: 100%; object-fit: contain"
+									/>
+								</div>
+							{/if}
+							<h3 class="text-xl font-bold" style="color: var(--color-text-on-box)">{credential.title}</h3>
+						</div>
+						{#if credential.issuer}
+							<p class="text-sm" style="color: var(--color-text-on-box); opacity: 0.85">{credential.issuer}</p>
 						{/if}
 					</article>
 				{/each}

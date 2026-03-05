@@ -34,10 +34,10 @@ function _page($$renderer) {
   ]);
   for (let i = 0, $$length = each_array.length; i < $$length; i++) {
     let project = each_array[i];
-    $$renderer.push(`<div class="project-card flex h-full flex-col rounded-xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl svelte-rqn88j"${attr_style(`background: var(--color-box); animation-delay: ${stringify(i * 0.1)}s`)}><div class="flex flex-wrap items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3 min-w-0 flex-1 pr-2">`);
+    $$renderer.push(`<div class="entrance-wrapper svelte-rqn88j"${attr_style(`animation-delay: ${stringify(i * 0.1)}s`)}><div class="project-card hover-lift flex h-full flex-col rounded-xl p-6" style="background: var(--color-box)"><div class="flex flex-wrap items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3 min-w-0 flex-1 pr-2">`);
     if (project.logo) {
       $$renderer.push("<!--[-->");
-      $$renderer.push(`<div class="project-logo-shell svelte-rqn88j" style="width: 3.5rem; height: 3.5rem"><img${attr("src", project.logo)}${attr("alt", `${stringify(project.title)} logo`)} class="project-logo svelte-rqn88j" width="56" height="56" style="width: 100%; height: 100%; object-fit: contain"/></div>`);
+      $$renderer.push(`<div class="project-logo-shell svelte-rqn88j"><img${attr("src", project.logo)}${attr("alt", `${stringify(project.title)} logo`)} class="project-logo svelte-rqn88j" width="56" height="56"/></div>`);
     } else {
       $$renderer.push("<!--[!-->");
     }
@@ -77,11 +77,11 @@ function _page($$renderer) {
     $$renderer.push(`<!--]--> `);
     if (project.link) {
       $$renderer.push("<!--[-->");
-      $$renderer.push(`<a${attr("href", project.link)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 self-start text-sm font-medium transition-all duration-300 hover:scale-105" style="color: var(--color-text-on-box); opacity: 0.9">View Project <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>`);
+      $$renderer.push(`<a${attr("href", project.link)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 self-start text-sm font-medium opacity-90 transition-opacity hover:opacity-100" style="color: var(--color-text-on-box)">View Project <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>`);
     } else {
       $$renderer.push("<!--[!-->");
     }
-    $$renderer.push(`<!--]--></div></div>`);
+    $$renderer.push(`<!--]--></div></div></div>`);
   }
   $$renderer.push(`<!--]--></div></div></div>`);
 }

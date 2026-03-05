@@ -8,6 +8,10 @@ const tritonLogo = "/app/immutable/assets/triton.CkKwRNTu.jpeg";
 const relayLogo = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAMAAAAKE/YAAAAAG1BMVEX///8IZF5Gi4e30tAkdnHw9vXU5OOWvbtpoZ1N0fpuAAADGElEQVR4nO2b23LDIAxEY4yB///ipm4cX9BaqTsgubPnlelkEYskMH08CCGEEEIIIYQQQgghhBBCCCGkB1MqpeQ0Wev4BanEYSaWZK3lU/KwIVur+Yyd5puoPmgehmKtSCcdNQ/DaK1JpdSig7UmjRRr0e5tLQT6mfmsVZ0jOPob19l6EgPtfCuKjvZuahBo16kaONp3pAMS7djTI9LsOXsgR3vO09DRnt0BHe2498CO9ps7Jhjo6PekiB3tN9C3TB3Y0X5TB3Z08OvoO6YO7OjBWhnmlsUQ9P73d/SUfPV6ejFMOcQYQ/HjFtXRad2nwUu4tfZu3Fm+uLC5VgyPR3QPnapWDOtrBQexVhwtzcl+OyqOHoUcbt5ha44W52TdkCjFUJ6TcY+tFEOwS6NttsbF8GxO0XQrasUQzcnU1NjR53OyFK2kDlx3DEVrxbD6pLhg6ekLxfAl2jB7aMUQzsmwZ7pUDDfjFmiOvmOg8Zwsu7zrjrZr8m7p6Evt3boQJmiOhnOy/NSlOBoWQ8uvt8o3Q5epA69+UeZkmDrw6vt19OX27paONuxJ/5ejX4F06WilGOqOnlIuJXR996ukDvSQ6X1gmfLq+dDrtHi9GM5xPWzTPkcv7Oifn8eOnhciH8djh2BrqQMHel4IKbO0z4NaMYTD80KIB/jmDjkphsqcCv7r1reoWNQn7R0qO21t/UdHoym1rZSKox9weF4IaPimrr5+11E+mXIbcLX7CRV+FDSPY8O3bFnhlePrR6Gqcj7cVDRa/sWTUFVyKHr5CItUaQthInrZR0DVshD41VDLRA08/Y4TEL2MK5WplWgxe6xZFqhaxj3l6dWQsqp13OafBsRQbiqDpGrTDqE837Y5lXqP7TWopGq7yeRQt74NqfPH/iFEvRQ7v4oNV/uLhUrVPltV/1R0uJ9J9a7ocUo8qKqW9jB+tGtloD7vKLZHU+FUOm3HQ73FprKVHXu9aFplyb+Y8ntK8vgqO/e8c8o5hDziII35yYmgMZdQsv0LLEIIIYQQQgghhBBCCCGEEEIIIYQQQogxX/vaF+q9DuygAAAAAElFTkSuQmCC";
 const unigroupLogo = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2024.3.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20version='1.1'%20id='Layer_1'%20x='0px'%20y='0px'%20viewBox='0%200%20300%20204'%20style='enable-background:new%200%200%20300%20204;'%20xml:space='preserve'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:url(%23Shape_2_);}%20.st1{fill:url(%23Shape_3_);}%20%3c/style%3e%3cg%20id='Group'%20transform='translate(262.000000,%200.000000)'%3e%3clinearGradient%20id='Shape_2_'%20gradientUnits='userSpaceOnUse'%20x1='-261.6702'%20y1='192.0898'%20x2='-261.6702'%20y2='191.0912'%20gradientTransform='matrix(215.3494%200%200%20-88.1047%2056269.1172%2017032.1992)'%3e%3cstop%20offset='0'%20style='stop-color:%23A99084'%3e%3c/stop%3e%3cstop%20offset='1'%20style='stop-color:%2367403A'%3e%3c/stop%3e%3c/linearGradient%3e%3cpath%20id='Shape'%20class='st0'%20d='M-80.6,108.2h12.9l-3.2,3.9c-2.9,3.2-3.9,6.6-3.2,9.7c0.7,3.8,4.5,7.4,10.8,7.4%20c8.1,0,15.8-5,22.1-12.6c5.7-6.8,7-8.4,7-8.4h9.9c0,0-3.8,4.8-9.3,11.7c-9.5,11.8-22.2,18.5-35.3,18.5c-10.9,0-16.5-6.3-17.9-12.4%20C-89,119.1-84.7,113-80.6,108.2z%20M-148.8,145.2c5.2,16.1,23.5,31.2,54,31.2c36.1,0,66.4-15.6,88.2-44.5%20c15.2-20.1,17.8-23.5,17.8-23.5H2.8c0,0-7,9.2-16.1,20.6c-20.3,25.7-44.8,37.9-76.4,37.9c-25.6,0-38-13.3-42-26.7%20c-2.9-9.7-0.9-20.5,5.6-31.8h-16.7C-150,121.3-152.4,133.9-148.8,145.2z%20M-115.9,134.9c2.9,10.9,13.5,22.3,34.1,22.3%20c24.6,0,45.9-10.2,62.2-31c9.3-12,14-17.8,14-17.8h-9.1c0,0-5.6,7.2-12,14.9c-14,16.9-30.1,24.6-49.7,24.6%20c-15.6,0-22.4-9-24.6-17.4c-1.6-6.8,0.4-14.4,5.7-22.1H-110C-115.8,117.5-118.1,126.9-115.9,134.9z%20M-0.6,134.6%20c-26,34.5-59.2,51.5-102.6,51.5c-35.5,0-56.3-16.5-63.1-35.3c-4.5-12.7-2.9-27.6,5-42.5h-19.5c-8.8,17-10.6,34.1-5,48.6%20c8.4,21.9,36.8,39.5,77.7,39.5c47.7,0,86.8-22.3,113.7-59c12.4-17,20.8-28.9,20.8-28.9h-7C19.3,108.2,11.4,118.6-0.6,134.6z'%3e%3c/path%3e%3clinearGradient%20id='Shape_3_'%20gradientUnits='userSpaceOnUse'%20x1='-261.4112'%20y1='192.1574'%20x2='-261.4112'%20y2='191.0781'%20gradientTransform='matrix(276.5652%200%200%20-100.486%2072185.2344%2019308.9238)'%3e%3cstop%20offset='0'%20style='stop-color:%23A99084'%3e%3c/stop%3e%3cstop%20offset='1'%20style='stop-color:%23D6CAC4'%3e%3c/stop%3e%3c/linearGradient%3e%3cpath%20id='Shape_1_'%20class='st1'%20d='M-64.5,47.5l39.6,60.7h-9.9L-75.9,45L-64.5,47.5z%20M-80.6,108.2h12.9l-46.6-71.4l-15.1-3.2%20L-80.6,108.2z%20M-109.8,108.2h14.7L-146.4,30l-17.4-3.8L-109.8,108.2z%20M-142.8,108.2h16.7l-57.2-86.1l-20.3-4.3L-142.8,108.2z%20M-180.9,108.2h19.5l-64.6-95.3l-24.4-5.2L-180.9,108.2z%20M2.8,108.2h8.4L-23,56.3l-9.9-2.2L2.8,108.2z%20M-14.8,108.2h9.1l-36.9-56%20L-53,49.9L-14.8,108.2z%20M19.3,108.2h7L-5.8,60.1l-8.1-1.8L19.3,108.2z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e";
 const northgateLogo = "data:image/svg+xml,%3csvg%20width='284'%20height='284'%20viewBox='0%200%20284%20284'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M64.8347%20206.835C100.642%20206.835%20129.669%20177.807%20129.669%20142C129.669%20106.193%20100.642%2077.1653%2064.8347%2077.1653C29.0275%2077.1653%200%20106.193%200%20142C0%20177.807%2029.0275%20206.835%2064.8347%20206.835Z'%20fill='black'/%3e%3cpath%20d='M219.165%20206.835C254.972%20206.835%20284%20177.807%20284%20142C284%20106.193%20254.972%2077.1653%20219.165%2077.1653C183.358%2077.1653%20154.331%20106.193%20154.331%20142C154.331%20177.807%20183.358%20206.835%20219.165%20206.835Z'%20fill='black'/%3e%3cpath%20d='M142%20284C177.807%20284%20206.835%20254.972%20206.835%20219.165C206.835%20183.358%20177.807%20154.331%20142%20154.331C106.193%20154.331%2077.1653%20183.358%2077.1653%20219.165C77.1653%20254.972%20106.193%20284%20142%20284Z'%20fill='black'/%3e%3cpath%20d='M142%20129.669C177.807%20129.669%20206.835%20100.642%20206.835%2064.8347C206.835%2029.0275%20177.807%200%20142%200C106.193%200%2077.1653%2029.0275%2077.1653%2064.8347C77.1653%20100.642%20106.193%20129.669%20142%20129.669Z'%20fill='black'/%3e%3cpath%20d='M64.8347%20204.448C99.3239%20204.448%20127.283%20176.489%20127.283%20142C127.283%20107.511%2099.3239%2079.5518%2064.8347%2079.5518C30.3456%2079.5518%202.38657%20107.511%202.38657%20142C2.38657%20176.489%2030.3456%20204.448%2064.8347%20204.448Z'%20fill='black'/%3e%3cpath%20d='M219.165%20204.448C253.654%20204.448%20281.613%20176.489%20281.613%20142C281.613%20107.511%20253.654%2079.5518%20219.165%2079.5518C184.676%2079.5518%20156.717%20107.511%20156.717%20142C156.717%20176.489%20184.676%20204.448%20219.165%20204.448Z'%20fill='black'/%3e%3cpath%20d='M142%20281.613C176.489%20281.613%20204.448%20253.654%20204.448%20219.165C204.448%20184.676%20176.489%20156.717%20142%20156.717C107.511%20156.717%2079.5518%20184.676%2079.5518%20219.165C79.5518%20253.654%20107.511%20281.613%20142%20281.613Z'%20fill='black'/%3e%3cpath%20d='M142%20127.283C176.489%20127.283%20204.448%2099.3239%20204.448%2064.8347C204.448%2030.3456%20176.489%202.38657%20142%202.38657C107.511%202.38657%2079.5518%2030.3456%2079.5518%2064.8347C79.5518%2099.3239%20107.511%20127.283%20142%20127.283Z'%20fill='black'/%3e%3cpath%20d='M64.8347%20199.277C96.4681%20199.277%20122.112%20173.633%20122.112%20142C122.112%20110.367%2096.4681%2084.7227%2064.8347%2084.7227C33.2013%2084.7227%207.55742%20110.367%207.55742%20142C7.55742%20173.633%2033.2013%20199.277%2064.8347%20199.277Z'%20fill='black'/%3e%3cpath%20d='M219.165%20199.277C250.799%20199.277%20276.443%20173.633%20276.443%20142C276.443%20110.367%20250.799%2084.7227%20219.165%2084.7227C187.532%2084.7227%20161.888%20110.367%20161.888%20142C161.888%20173.633%20187.532%20199.277%20219.165%20199.277Z'%20fill='black'/%3e%3cpath%20d='M142%20276.443C173.633%20276.443%20199.277%20250.799%20199.277%20219.165C199.277%20187.532%20173.633%20161.888%20142%20161.888C110.367%20161.888%2084.7227%20187.532%2084.7227%20219.165C84.7227%20250.799%20110.367%20276.443%20142%20276.443Z'%20fill='black'/%3e%3cpath%20d='M142%20122.112C173.633%20122.112%20199.277%2096.4681%20199.277%2064.8347C199.277%2033.2013%20173.633%207.55742%20142%207.55742C110.367%207.55742%2084.7227%2033.2013%2084.7227%2064.8347C84.7227%2096.4681%20110.367%20122.112%20142%20122.112Z'%20fill='black'/%3e%3cpath%20d='M64.8347%20196.891C95.1501%20196.891%20119.725%20172.315%20119.725%20142C119.725%20111.685%2095.1501%2087.1093%2064.8347%2087.1093C34.5194%2087.1093%209.94397%20111.685%209.94397%20142C9.94397%20172.315%2034.5194%20196.891%2064.8347%20196.891Z'%20fill='%23FFEA00'/%3e%3cpath%20d='M219.165%20196.891C249.481%20196.891%20274.056%20172.315%20274.056%20142C274.056%20111.685%20249.481%2087.1093%20219.165%2087.1093C188.85%2087.1093%20164.275%20111.685%20164.275%20142C164.275%20172.315%20188.85%20196.891%20219.165%20196.891Z'%20fill='%23FFEA00'/%3e%3cpath%20d='M142%20274.056C172.315%20274.056%20196.891%20249.481%20196.891%20219.165C196.891%20188.85%20172.315%20164.275%20142%20164.275C111.685%20164.275%2087.1092%20188.85%2087.1092%20219.165C87.1092%20249.481%20111.685%20274.056%20142%20274.056Z'%20fill='%23FFEA00'/%3e%3cpath%20d='M142%20119.726C172.315%20119.726%20196.891%2095.1501%20196.891%2064.8348C196.891%2034.5195%20172.315%209.94403%20142%209.94403C111.685%209.94403%2087.1092%2034.5195%2087.1092%2064.8348C87.1092%2095.1501%20111.685%20119.726%20142%20119.726Z'%20fill='%23FFEA00'/%3e%3cpath%20d='M142%20196.891C172.315%20196.891%20196.891%20172.315%20196.891%20142C196.891%20111.685%20172.315%2087.1093%20142%2087.1093C111.685%2087.1093%2087.1092%20111.685%2087.1092%20142C87.1092%20172.315%20111.685%20196.891%20142%20196.891Z'%20fill='%23FFEA00'/%3e%3c/svg%3e";
+const compTiaSecurityPlusLogo = "/app/immutable/assets/comptia-security-plus.CpvhDVcz.png";
+const dodSealLogo = "/app/immutable/assets/dod-seal.DHUUpkQ6.svg";
+const georgiaTechLogo = "/app/immutable/assets/georgia-tech-logo.d7qvOPWF.png";
+const ucsdLogo = "/app/immutable/assets/ucsd-logo.zZiV4RGU.png";
 function _page($$renderer) {
   const experience = [
     {
@@ -99,13 +103,27 @@ function _page($$renderer) {
     {
       degree: "M.S. Computer Science (Machine Learning Concentration)",
       year: "2028",
-      school: "Georgia Institute of Technology"
+      school: "Georgia Institute of Technology",
+      logo: georgiaTechLogo
     },
     {
       degree: "B.S. Cognitive Science (Machine Learning Concentration)",
       year: "2022",
       school: "University of California, San Diego",
-      details: "Minors: Computer Science, Mathematics"
+      details: "Minors: Computer Science, Mathematics",
+      logo: ucsdLogo
+    }
+  ];
+  const credentials = [
+    {
+      title: "CompTIA Security+ Certification",
+      issuer: "CompTIA",
+      logo: compTiaSecurityPlusLogo
+    },
+    {
+      title: "Secret Clearance",
+      issuer: "United States Department of Defense (DoD)",
+      logo: dodSealLogo
     }
   ];
   const expertise = [
@@ -206,25 +224,45 @@ function _page($$renderer) {
   const each_array_3 = ensure_array_like(education);
   for (let $$index_3 = 0, $$length = each_array_3.length; $$index_3 < $$length; $$index_3++) {
     let school = each_array_3[$$index_3];
-    $$renderer.push(`<article class="p-5 rounded-xl resume-card svelte-1mijfb4"><p class="text-sm font-medium mb-1" style="color: var(--color-text-on-box); opacity: 0.8">${escape_html(school.year)}</p> <h3 class="text-xl font-bold mb-1" style="color: var(--color-text-on-box)">${escape_html(school.degree)}</h3> <p class="mb-1" style="color: var(--color-text-on-box); opacity: 0.9">${escape_html(school.school)}</p> `);
+    $$renderer.push(`<article class="p-5 rounded-xl resume-card svelte-1mijfb4"><div class="flex items-start gap-4">`);
+    if (school.logo) {
+      $$renderer.push("<!--[-->");
+      $$renderer.push(`<div class="experience-logo svelte-1mijfb4" style="width: 3.5rem; height: 3.5rem"><img${attr("src", school.logo)}${attr("alt", `${school.school} logo`)} class="experience-logo-img svelte-1mijfb4" width="56" height="56" style="width: 100%; height: 100%; object-fit: contain"/></div>`);
+    } else {
+      $$renderer.push("<!--[!-->");
+    }
+    $$renderer.push(`<!--]--> <div><p class="text-sm font-medium mb-1" style="color: var(--color-text-on-box); opacity: 0.8">${escape_html(school.year)}</p> <h3 class="text-xl font-bold mb-1" style="color: var(--color-text-on-box)">${escape_html(school.degree)}</h3> <p class="mb-1" style="color: var(--color-text-on-box); opacity: 0.9">${escape_html(school.school)}</p> `);
     if (school.details) {
       $$renderer.push("<!--[-->");
       $$renderer.push(`<p class="text-sm" style="color: var(--color-text-on-box); opacity: 0.8">${escape_html(school.details)}</p>`);
     } else {
       $$renderer.push("<!--[!-->");
     }
-    $$renderer.push(`<!--]--></article>`);
+    $$renderer.push(`<!--]--></div></div></article>`);
+  }
+  $$renderer.push(`<!--]--></div></section> <section class="mb-12"><h2 class="text-3xl font-bold mb-5 section-title svelte-1mijfb4" style="color: var(--color-primary)">Certifications &amp; Clearance</h2> <div class="grid md:grid-cols-2 gap-4"><!--[-->`);
+  const each_array_4 = ensure_array_like(credentials);
+  for (let $$index_4 = 0, $$length = each_array_4.length; $$index_4 < $$length; $$index_4++) {
+    let credential = each_array_4[$$index_4];
+    $$renderer.push(`<article class="p-5 rounded-xl resume-card svelte-1mijfb4"><div class="flex items-center gap-3 mb-1">`);
+    if (credential.logo) {
+      $$renderer.push("<!--[-->");
+      $$renderer.push(`<div class="experience-logo svelte-1mijfb4" style="width: 4rem; height: 4rem"><img${attr("src", credential.logo)}${attr("alt", `${credential.title} logo`)} class="experience-logo-img svelte-1mijfb4" width="64" height="64" style="width: 100%; height: 100%; object-fit: contain"/></div>`);
+    } else {
+      $$renderer.push("<!--[!-->");
+    }
+    $$renderer.push(`<!--]--> <h3 class="text-xl font-bold" style="color: var(--color-text-on-box)">${escape_html(credential.title)}</h3></div> <p class="text-sm" style="color: var(--color-text-on-box); opacity: 0.85">${escape_html(credential.issuer)}</p></article>`);
   }
   $$renderer.push(`<!--]--></div></section> <section><h2 class="text-3xl font-bold mb-5 section-title svelte-1mijfb4" style="color: var(--color-primary)">Areas of Expertise</h2> <div class="flex flex-wrap gap-3"><!--[-->`);
-  const each_array_4 = ensure_array_like(expertise);
-  for (let $$index_4 = 0, $$length = each_array_4.length; $$index_4 < $$length; $$index_4++) {
-    let area = each_array_4[$$index_4];
+  const each_array_5 = ensure_array_like(expertise);
+  for (let $$index_5 = 0, $$length = each_array_5.length; $$index_5 < $$length; $$index_5++) {
+    let area = each_array_5[$$index_5];
     $$renderer.push(`<span class="px-4 py-2 rounded-lg text-sm font-medium skill-chip svelte-1mijfb4">${escape_html(area)}</span>`);
   }
   $$renderer.push(`<!--]--></div></section> <section class="mt-12"><h2 class="text-3xl font-bold mb-5 section-title svelte-1mijfb4" style="color: var(--color-primary)">Technical Skills</h2> <div class="flex flex-wrap gap-3"><!--[-->`);
-  const each_array_5 = ensure_array_like(technicalSkills);
-  for (let $$index_5 = 0, $$length = each_array_5.length; $$index_5 < $$length; $$index_5++) {
-    let skill = each_array_5[$$index_5];
+  const each_array_6 = ensure_array_like(technicalSkills);
+  for (let $$index_6 = 0, $$length = each_array_6.length; $$index_6 < $$length; $$index_6++) {
+    let skill = each_array_6[$$index_6];
     $$renderer.push(`<span class="px-4 py-2 rounded-lg text-sm font-medium skill-chip svelte-1mijfb4">${escape_html(skill)}</span>`);
   }
   $$renderer.push(`<!--]--></div></section></div></div>`);
