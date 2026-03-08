@@ -3,67 +3,47 @@
 	import burnstackLogo from '$lib/assets/project-logos/burnstack.svg?url';
 	import quantvisionLogo from '$lib/assets/project-logos/quantvision.svg?url';
 	import llmfitLogo from '$lib/assets/project-logos/llmfit.png?url';
+
+	const logoSrc = (url?: string) => {
+		if (!url) return '';
+		if (url.startsWith('data:') || url.startsWith('http://') || url.startsWith('https://'))
+			return url;
+		if (url.startsWith('/')) return `.${url}`;
+		return url;
+	};
 </script>
 
 <div class="min-h-screen px-6 py-12">
-	<div class="max-w-6xl mx-auto">
+	<div class="mx-auto max-w-6xl">
 		<!-- Header -->
-		<header class="mb-16 text-center page-header-box">
-			<a href="{base}/" class="inline-block mb-8 text-lg hover:underline" style="color: var(--color-primary); opacity: 0.8">
+		<header class="page-header-box mb-16 text-center">
+			<a
+				href="{base}/"
+				class="mb-8 inline-block text-lg hover:underline"
+				style="color: var(--color-primary); opacity: 0.8"
+			>
 				← Back to Home
 			</a>
-			<h1 class="text-6xl font-bold mb-4" style="color: var(--color-primary)">Projects</h1>
+			<h1 class="mb-4 text-6xl font-bold" style="color: var(--color-primary)">Projects</h1>
 			<p class="text-xl" style="color: var(--color-primary); opacity: 0.7">
 				A showcase of my recent work and contributions
 			</p>
 		</header>
 
 		<!-- Projects Grid -->
-		<div class="grid md:grid-cols-2 gap-8">
-			{#each [
-				{
-					title: 'Burnstack.ai',
-					logo: burnstackLogo,
-					description:
-						'Startup cost command center SaaS that centralizes cloud and AI spend (OpenAI, Anthropic, OpenRouter, Supabase, Tavily), with secure multi-tenant workspaces, encrypted provider integrations, automated sync/ingestion pipelines, and invoice-based cost import for reliable burn tracking.',
-					tech: ['Next.js', 'Tailwind', 'TypeScript'],
-					link: 'https://burnstack.ai',
-					tags: ['Startup'],
-					status: 'To Be Released'
-				},
-				{
-					title: 'QuantVision.ai',
-					logo: quantvisionLogo,
-					description: 'A SaaS platform for company financials and stock market analytics integrated with advanced agentic AI capabilities.',
-					tech: ["Next.js", "Python", "Tailwind", "Google Cloud", "LangChain DeepAgents", "LangFuse"],
-					link: 'https://quantvision.ai',
-					tags: ['Startup'],
-					status: 'To Be Released'
-				},
-				{
-					title: 'LLMfit.io',
-					logo: llmfitLogo,
-					description: 'A site to aid users looking to see if their hardware will be able to run a specific LLM model locally.',
-					tech: [],
-					link: 'https://llmfit.io',
-					tags: [],
-					status: 'Live'
-				},
-			] as project, i}
-				<div 
-					class="entrance-wrapper" 
-					style="animation-delay: {i * 0.1}s"
-				>
+		<div class="grid gap-8 md:grid-cols-2">
+			{#each [{ title: 'Burnstack.ai', logo: burnstackLogo, description: 'Startup cost command center SaaS that centralizes cloud and AI spend (OpenAI, Anthropic, OpenRouter, Supabase, Tavily), with secure multi-tenant workspaces, encrypted provider integrations, automated sync/ingestion pipelines, and invoice-based cost import for reliable burn tracking.', tech: ['Next.js', 'Tailwind', 'TypeScript'], link: 'https://burnstack.ai', tags: ['Startup'], status: 'To Be Released' }, { title: 'QuantVision.ai', logo: quantvisionLogo, description: 'A SaaS platform for company financials and stock market analytics integrated with advanced agentic AI capabilities.', tech: ['Next.js', 'Python', 'Tailwind', 'Google Cloud', 'LangChain DeepAgents', 'LangFuse'], link: 'https://quantvision.ai', tags: ['Startup'], status: 'To Be Released' }, { title: 'LLMfit.io', logo: llmfitLogo, description: 'A site to aid users looking to see if their hardware will be able to run a specific LLM model locally.', tech: [], link: 'https://llmfit.io', tags: [], status: 'Live' }] as project, i}
+				<div class="entrance-wrapper" style="animation-delay: {i * 0.1}s">
 					<div
 						class="project-card hover-lift flex h-full flex-col rounded-xl p-6"
 						style="background: var(--color-box)"
 					>
-						<div class="flex flex-wrap items-start justify-between gap-3 mb-3">
-							<div class="flex items-center gap-3 min-w-0 flex-1 pr-2">
+						<div class="mb-3 flex flex-wrap items-start justify-between gap-3">
+							<div class="flex min-w-0 flex-1 items-center gap-3 pr-2">
 								{#if project.logo}
 									<div class="project-logo-shell">
 										<img
-											src={project.logo}
+											src={logoSrc(project.logo)}
 											alt="{project.title} logo"
 											class="project-logo"
 											width="56"
@@ -71,28 +51,28 @@
 										/>
 									</div>
 								{/if}
-								<h3 class="text-2xl font-bold min-w-0" style="color: var(--color-text-on-box)">
+								<h3 class="min-w-0 text-2xl font-bold" style="color: var(--color-text-on-box)">
 									{project.title}
 								</h3>
 							</div>
 							{#if project.status}
 								<span
-									class="px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap shrink-0"
+									class="shrink-0 rounded-lg px-3 py-1 text-xs font-medium whitespace-nowrap"
 									style="background: var(--color-background); color: var(--color-primary); opacity: 0.8"
 								>
 									{project.status}
 								</span>
 							{/if}
 						</div>
-						<p class="leading-relaxed mb-4" style="color: var(--color-text-on-box); opacity: 0.85">
+						<p class="mb-4 leading-relaxed" style="color: var(--color-text-on-box); opacity: 0.85">
 							{project.description}
 						</p>
 						<div class="mt-auto pt-2">
 							{#if project.tags && project.tags.length > 0}
-								<div class="flex flex-wrap gap-2 mb-3">
+								<div class="mb-3 flex flex-wrap gap-2">
 									{#each project.tags as tag}
 										<span
-											class="px-3 py-1 rounded-full text-xs font-semibold"
+											class="rounded-full px-3 py-1 text-xs font-semibold"
 											style="background: var(--color-text-on-box); color: var(--color-box); opacity: 0.9"
 										>
 											{tag}
@@ -101,10 +81,10 @@
 								</div>
 							{/if}
 							{#if project.tech && project.tech.length > 0}
-								<div class="flex flex-wrap gap-2 mb-4">
+								<div class="mb-4 flex flex-wrap gap-2">
 									{#each project.tech as tech}
 										<span
-											class="px-3 py-1 rounded-lg text-sm"
+											class="rounded-lg px-3 py-1 text-sm"
 											style="background: var(--color-background); color: var(--color-primary)"
 										>
 											{tech}
@@ -121,8 +101,13 @@
 									style="color: var(--color-text-on-box)"
 								>
 									View Project
-									<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+									<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+										/>
 									</svg>
 								</a>
 							{/if}
@@ -189,7 +174,10 @@
 	}
 
 	.page-header-box {
-		transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+		transition:
+			background-color 0.3s ease,
+			box-shadow 0.3s ease,
+			color 0.3s ease;
 	}
 
 	:global(.dark) .page-header-box {

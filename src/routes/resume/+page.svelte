@@ -65,8 +65,19 @@
 			dates: 'February 2024 - Present',
 			logo: skycubedLogo,
 			description:
-				'Developed proprietary software for DoD clients within a mission-critical R&D lab environment, serving as the technical translator between domain experts and engineering teams to convert complex data pipelines and analysis workflows into scalable production systems. Owned the design and implementation of the platform ontology within Palantir\'s Maven Smart Systems, leading and mentoring the team on ontological data modeling and the downstream AI integration opportunities it unlocks. Designed and deployed full-stack applications and data pipelines that abstracted sophisticated cyber readiness analysis into intuitive interfaces, accelerating the research and analysis cycle for non-engineering stakeholders. Leveraged a modern technology stack including React, Golang, Docker, Python, various Microsoft Azure Government services, Terraform, and GitLab/GitHub CI/CD pipelines. Maintained an active Secret clearance while pursuing Top-Secret clearance. Additionally, took internal initiative to lead and author a technical proposal for a new contract opportunity, conducting independent research literature review to inform model selection and architecture decisions, and designing and prototyping a deep learning pipeline using a Siamese U-Net model with ResNet backbone to automatically detect and score structural damage from satellite imagery. Proposed a high-level system design spanning cloud infrastructure, geospatial visualization, and multi-modal data integration including auxiliary ML models for supplemental data sources.',
-			tech: ['React', 'Go', 'Docker', 'Python', 'Azure Government', 'Terraform', 'GitLab', 'GitHub', 'CI/CD', 'Palantir Maven Smart Systems']
+				"Developed proprietary software for DoD clients within a mission-critical R&D lab environment, serving as the technical translator between domain experts and engineering teams to convert complex data pipelines and analysis workflows into scalable production systems. Owned the design and implementation of the platform ontology within Palantir's Maven Smart Systems, leading and mentoring the team on ontological data modeling and the downstream AI integration opportunities it unlocks. Designed and deployed full-stack applications and data pipelines that abstracted sophisticated cyber readiness analysis into intuitive interfaces, accelerating the research and analysis cycle for non-engineering stakeholders. Leveraged a modern technology stack including React, Golang, Docker, Python, various Microsoft Azure Government services, Terraform, and GitLab/GitHub CI/CD pipelines. Maintained an active Secret clearance while pursuing Top-Secret clearance. Additionally, took internal initiative to lead and author a technical proposal for a new contract opportunity, conducting independent research literature review to inform model selection and architecture decisions, and designing and prototyping a deep learning pipeline using a Siamese U-Net model with ResNet backbone to automatically detect and score structural damage from satellite imagery. Proposed a high-level system design spanning cloud infrastructure, geospatial visualization, and multi-modal data integration including auxiliary ML models for supplemental data sources.",
+			tech: [
+				'React',
+				'Go',
+				'Docker',
+				'Python',
+				'Azure Government',
+				'Terraform',
+				'GitLab',
+				'GitHub',
+				'CI/CD',
+				'Palantir Maven Smart Systems'
+			]
 		},
 		{
 			role: 'Lead Software Engineer',
@@ -111,7 +122,7 @@
 			name: 'QuantVision.ai',
 			logo: quantvisionLogo,
 			description:
-				'Founded and architected QuantVision.ai, a financial data platform centralizing company filings and financials, designed to scale into a comprehensive analysis solution for emerging and seasoned analysts. Serves terabytes of company filings via AWS S3 and structured financial data via a managed PostgreSQL instance, with infrastructure designed to scale into a production-ready platform. Technology stack included a full Typescript/Next.js frontend and backend with several backend microservices written with Python\'s FastAPI and Golang, with the main webapp hosted on Vercel and microservices on Google Cloud. Currently developing an agentic AI with LangChain\'s DeepAgents package that interfaces with a Neo4j knowledge graph containing industry and company relationships and Elasticsearch for full text and vector search to aid in proposal creation and investment theses.'
+				"Founded and architected QuantVision.ai, a financial data platform centralizing company filings and financials, designed to scale into a comprehensive analysis solution for emerging and seasoned analysts. Serves terabytes of company filings via AWS S3 and structured financial data via a managed PostgreSQL instance, with infrastructure designed to scale into a production-ready platform. Technology stack included a full Typescript/Next.js frontend and backend with several backend microservices written with Python's FastAPI and Golang, with the main webapp hosted on Vercel and microservices on Google Cloud. Currently developing an agentic AI with LangChain's DeepAgents package that interfaces with a Neo4j knowledge graph containing industry and company relationships and Elasticsearch for full text and vector search to aid in proposal creation and investment theses."
 		},
 		{
 			name: 'LLMfit.io',
@@ -192,32 +203,51 @@
 		'Tableau',
 		'Power BI'
 	];
+
+	const logoSrc = (url?: string) => {
+		if (!url) return '';
+		if (url.startsWith('data:') || url.startsWith('http://') || url.startsWith('https://'))
+			return url;
+		if (url.startsWith('/')) return `.${url}`;
+		return url;
+	};
 </script>
 
 <div class="min-h-screen px-6 py-12">
-	<div class="max-w-5xl mx-auto">
-		<header class="mb-12 text-center page-header-box">
-			<a href="{base}/" class="inline-block mb-8 text-lg hover:underline" style="color: var(--color-primary); opacity: 0.8">
+	<div class="mx-auto max-w-5xl">
+		<header class="page-header-box mb-12 text-center">
+			<a
+				href="{base}/"
+				class="mb-8 inline-block text-lg hover:underline"
+				style="color: var(--color-primary); opacity: 0.8"
+			>
 				← Back to Home
 			</a>
-			<h1 class="text-6xl font-bold mb-4" style="color: var(--color-primary)">Resume</h1>
-			<p class="text-2xl font-light mb-3" style="color: var(--color-primary); opacity: 0.9">Full Stack Software Engineer</p>
-			<p class="text-lg max-w-3xl mx-auto leading-relaxed" style="color: var(--color-primary); opacity: 0.75">
+			<h1 class="mb-4 text-6xl font-bold" style="color: var(--color-primary)">Resume</h1>
+			<p class="mb-3 text-2xl font-light" style="color: var(--color-primary); opacity: 0.9">
+				Full Stack Software Engineer
+			</p>
+			<p
+				class="mx-auto max-w-3xl text-lg leading-relaxed"
+				style="color: var(--color-primary); opacity: 0.75"
+			>
 				{profile}
 			</p>
 		</header>
 
 		<section class="mb-12">
-			<h2 class="text-3xl font-bold mb-5 section-title" style="color: var(--color-primary)">Experience</h2>
+			<h2 class="section-title mb-5 text-3xl font-bold" style="color: var(--color-primary)">
+				Experience
+			</h2>
 			<div class="space-y-5">
 				{#each experience as role}
-					<article class="p-6 rounded-xl resume-card">
-						<div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-3">
+					<article class="resume-card rounded-xl p-6">
+						<div class="mb-3 flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
 							<div class="flex items-start gap-4">
 								{#if role.logo}
 									<div class="experience-logo" style="width: 3.5rem; height: 3.5rem">
 										<img
-											src={role.logo}
+											src={logoSrc(role.logo)}
 											alt="{role.company} logo"
 											class="experience-logo-img"
 											width="56"
@@ -227,7 +257,9 @@
 									</div>
 								{/if}
 								<div>
-									<h3 class="text-2xl font-bold" style="color: var(--color-text-on-box)">{role.role}</h3>
+									<h3 class="text-2xl font-bold" style="color: var(--color-text-on-box)">
+										{role.role}
+									</h3>
 									<p class="text-lg" style="color: var(--color-text-on-box); opacity: 0.9">
 										{#if role.companyLink}
 											<a
@@ -242,23 +274,27 @@
 										{:else}
 											{role.company}
 										{/if}
-										{#if role.employmentType} • {role.employmentType}{/if} • {role.location}
+										{#if role.employmentType}
+											• {role.employmentType}{/if} • {role.location}
 									</p>
 								</div>
 							</div>
-							<p class="text-sm md:text-base font-medium" style="color: var(--color-text-on-box); opacity: 0.8">
+							<p
+								class="text-sm font-medium md:text-base"
+								style="color: var(--color-text-on-box); opacity: 0.8"
+							>
 								{role.dates}
 							</p>
 						</div>
 						{#if role.description}
-							<p class="leading-relaxed mb-4" style="color: var(--color-text-on-box); opacity: 0.9">
+							<p class="mb-4 leading-relaxed" style="color: var(--color-text-on-box); opacity: 0.9">
 								{role.description}
 							</p>
 						{/if}
 						{#if role.tech && role.tech.length > 0}
 							<div class="flex flex-wrap gap-2">
 								{#each role.tech as tech}
-									<span class="px-3 py-1 rounded-lg text-sm skill-chip">{tech}</span>
+									<span class="skill-chip rounded-lg px-3 py-1 text-sm">{tech}</span>
 								{/each}
 							</div>
 						{/if}
@@ -268,15 +304,17 @@
 		</section>
 
 		<section class="mb-12">
-			<h2 class="text-3xl font-bold mb-5 section-title" style="color: var(--color-primary)">Projects</h2>
+			<h2 class="section-title mb-5 text-3xl font-bold" style="color: var(--color-primary)">
+				Projects
+			</h2>
 			<div class="space-y-4">
 				{#each projects as project}
-					<article class="p-5 rounded-xl resume-card">
-						<div class="flex items-center gap-3 mb-2">
+					<article class="resume-card rounded-xl p-5">
+						<div class="mb-2 flex items-center gap-3">
 							{#if project.logo}
 								<div class="project-logo-shell" style="width: 3.5rem; height: 3.5rem">
 									<img
-										src={project.logo}
+										src={logoSrc(project.logo)}
 										alt="{project.name} logo"
 										class="project-logo-img"
 										width="56"
@@ -285,24 +323,33 @@
 									/>
 								</div>
 							{/if}
-							<h3 class="text-xl font-bold" style="color: var(--color-text-on-box)">{project.name}</h3>
+							<h3 class="text-xl font-bold" style="color: var(--color-text-on-box)">
+								{project.name}
+							</h3>
 						</div>
-						<p class="leading-relaxed text-sm" style="color: var(--color-text-on-box); opacity: 0.9">{project.description}</p>
+						<p
+							class="text-sm leading-relaxed"
+							style="color: var(--color-text-on-box); opacity: 0.9"
+						>
+							{project.description}
+						</p>
 					</article>
 				{/each}
 			</div>
 		</section>
 
 		<section class="mb-12">
-			<h2 class="text-3xl font-bold mb-5 section-title" style="color: var(--color-primary)">Education</h2>
-			<div class="grid md:grid-cols-2 gap-4">
+			<h2 class="section-title mb-5 text-3xl font-bold" style="color: var(--color-primary)">
+				Education
+			</h2>
+			<div class="grid gap-4 md:grid-cols-2">
 				{#each education as school}
-					<article class="p-5 rounded-xl resume-card">
+					<article class="resume-card rounded-xl p-5">
 						<div class="flex items-start gap-4">
 							{#if school.logo}
 								<div class="experience-logo" style="width: 3.5rem; height: 3.5rem">
 									<img
-										src={school.logo}
+										src={logoSrc(school.logo)}
 										alt={`${school.school} logo`}
 										class="experience-logo-img"
 										width="56"
@@ -312,11 +359,22 @@
 								</div>
 							{/if}
 							<div>
-								<p class="text-sm font-medium mb-1" style="color: var(--color-text-on-box); opacity: 0.8">{school.year}</p>
-								<h3 class="text-xl font-bold mb-1" style="color: var(--color-text-on-box)">{school.degree}</h3>
-								<p class="mb-1" style="color: var(--color-text-on-box); opacity: 0.9">{school.school}</p>
+								<p
+									class="mb-1 text-sm font-medium"
+									style="color: var(--color-text-on-box); opacity: 0.8"
+								>
+									{school.year}
+								</p>
+								<h3 class="mb-1 text-xl font-bold" style="color: var(--color-text-on-box)">
+									{school.degree}
+								</h3>
+								<p class="mb-1" style="color: var(--color-text-on-box); opacity: 0.9">
+									{school.school}
+								</p>
 								{#if school.details}
-									<p class="text-sm" style="color: var(--color-text-on-box); opacity: 0.8">{school.details}</p>
+									<p class="text-sm" style="color: var(--color-text-on-box); opacity: 0.8">
+										{school.details}
+									</p>
 								{/if}
 							</div>
 						</div>
@@ -326,15 +384,17 @@
 		</section>
 
 		<section class="mb-12">
-			<h2 class="text-3xl font-bold mb-5 section-title" style="color: var(--color-primary)">Certifications &amp; Clearance</h2>
-			<div class="grid md:grid-cols-2 gap-4">
+			<h2 class="section-title mb-5 text-3xl font-bold" style="color: var(--color-primary)">
+				Certifications &amp; Clearance
+			</h2>
+			<div class="grid gap-4 md:grid-cols-2">
 				{#each credentials as credential}
-					<article class="p-5 rounded-xl resume-card">
-						<div class="flex items-center gap-3 mb-1">
+					<article class="resume-card rounded-xl p-5">
+						<div class="mb-1 flex items-center gap-3">
 							{#if credential.logo}
 								<div class="experience-logo" style="width: 4rem; height: 4rem">
 									<img
-										src={credential.logo}
+										src={logoSrc(credential.logo)}
 										alt={`${credential.title} logo`}
 										class="experience-logo-img"
 										width="64"
@@ -343,10 +403,14 @@
 									/>
 								</div>
 							{/if}
-							<h3 class="text-xl font-bold" style="color: var(--color-text-on-box)">{credential.title}</h3>
+							<h3 class="text-xl font-bold" style="color: var(--color-text-on-box)">
+								{credential.title}
+							</h3>
 						</div>
 						{#if credential.issuer}
-							<p class="text-sm" style="color: var(--color-text-on-box); opacity: 0.85">{credential.issuer}</p>
+							<p class="text-sm" style="color: var(--color-text-on-box); opacity: 0.85">
+								{credential.issuer}
+							</p>
 						{/if}
 					</article>
 				{/each}
@@ -354,19 +418,23 @@
 		</section>
 
 		<section>
-			<h2 class="text-3xl font-bold mb-5 section-title" style="color: var(--color-primary)">Areas of Expertise</h2>
+			<h2 class="section-title mb-5 text-3xl font-bold" style="color: var(--color-primary)">
+				Areas of Expertise
+			</h2>
 			<div class="flex flex-wrap gap-3">
 				{#each expertise as area}
-					<span class="px-4 py-2 rounded-lg text-sm font-medium skill-chip">{area}</span>
+					<span class="skill-chip rounded-lg px-4 py-2 text-sm font-medium">{area}</span>
 				{/each}
 			</div>
 		</section>
 
 		<section class="mt-12">
-			<h2 class="text-3xl font-bold mb-5 section-title" style="color: var(--color-primary)">Technical Skills</h2>
+			<h2 class="section-title mb-5 text-3xl font-bold" style="color: var(--color-primary)">
+				Technical Skills
+			</h2>
 			<div class="flex flex-wrap gap-3">
 				{#each technicalSkills as skill}
-					<span class="px-4 py-2 rounded-lg text-sm font-medium skill-chip">{skill}</span>
+					<span class="skill-chip rounded-lg px-4 py-2 text-sm font-medium">{skill}</span>
 				{/each}
 			</div>
 		</section>
@@ -378,7 +446,10 @@
 		background: var(--color-box);
 		border: 1px solid rgba(255, 255, 255, 0.15);
 		box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
-		transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+		transition:
+			background-color 0.3s ease,
+			border-color 0.3s ease,
+			box-shadow 0.3s ease;
 	}
 
 	:global(.dark) .resume-card {
@@ -460,7 +531,10 @@
 	}
 
 	.page-header-box {
-		transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+		transition:
+			background-color 0.3s ease,
+			box-shadow 0.3s ease,
+			color 0.3s ease;
 	}
 
 	:global(.dark) .page-header-box {
