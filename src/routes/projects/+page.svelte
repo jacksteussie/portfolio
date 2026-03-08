@@ -43,7 +43,7 @@
 				{
 					title: 'LLMfit.io',
 					logo: llmfitLogo,
-					description: 'A site to aid users looking to see if their hardware will be able to run a specific LLM model locally and how well.',
+					description: 'A site to aid users looking to see if their hardware will be able to run a specific LLM model locally.',
 					tech: [],
 					link: 'https://llmfit.io',
 					tags: [],
