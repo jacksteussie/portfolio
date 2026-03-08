@@ -2,6 +2,7 @@
 	import { base } from '$app/paths';
 	import burnstackLogo from '$lib/assets/project-logos/burnstack.svg?url';
 	import quantvisionLogo from '$lib/assets/project-logos/quantvision.svg?url';
+	import llmfitLogo from '$lib/assets/project-logos/llmfit.png?url';
 </script>
 
 <div class="min-h-screen px-6 py-12">
@@ -38,6 +39,15 @@
 					link: 'https://quantvision.ai',
 					tags: ['Startup'],
 					status: 'To Be Released'
+				},
+				{
+					title: 'LLMfit.io',
+					logo: llmfitLogo,
+					description: 'A site to aid users looking to see if their hardware will be able to run a specific LLM model locally and how well.',
+					tech: [],
+					link: 'https://llmfit.io',
+					tags: [],
+					status: 'Live'
 				},
 			] as project, i}
 				<div 
